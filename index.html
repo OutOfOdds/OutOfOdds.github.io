@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>odds_ · Mike Mailyan</title>
-<meta name="description" content="Mike Mailyan (OutOfOdds) — independent iOS developer. Companion apps for card, board and party games.">
+<meta name="description" content="Mike Mailyan (OutOfOdds) — independent iOS developer. Games, trackers and everyday tools for iPhone, from idea to App Store.">
 <meta property="og:title" content="odds_ · Mike Mailyan">
-<meta property="og:description" content="Independent iOS developer. Companion apps for card, board and party games.">
-<meta property="og:image" content="https://outofodds.github.io/assets/header_odds2.gif">
+<meta property="og:description" content="Independent iOS developer. Games, trackers and everyday tools for iPhone, from idea to App Store.">
+<meta property="og:image" content="https://outofodds.github.io/assets/monitor.gif">
 <!-- if you're reading the source, you're one of us. -->
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect width="32" height="32" rx="6" fill="%23050806"/%3E%3Ctext x="7" y="24" font-family="monospace" font-size="25" font-weight="700" fill="%23C5DFA2"%3Eo%3C/text%3E%3C/svg%3E'>
@@ -20,8 +20,6 @@ img.px { image-rendering:pixelated; image-rendering:crisp-edges; display:block; 
 .lang button[aria-pressed=true]::before { content:"> "; color:var(--phosphor); }
 .lang button:focus-visible { outline:2px solid var(--phosphor); outline-offset:4px; }
 
-.hero { margin:1.8rem 0 0; border:1px solid var(--line); background:#000; }
-.hero img { width:100%; height:auto; }
 main { max-width:none; }
 .about { display:grid; grid-template-columns:1fr auto; gap:1.5rem; align-items:start; margin-top:2.2rem; }
 .about .monitor { width:120px; height:120px; }
@@ -44,7 +42,6 @@ h2 code { font:inherit; }
 .wip .app h3 { color:var(--ink); }
 .redacted { background:var(--ink); color:var(--ink); user-select:none; }
 
-.divider { width:100%; height:auto; margin:2.6rem 0 0; opacity:.85; }
 .contact { display:flex; flex-wrap:wrap; gap:.4rem 1.6rem; }
 .end { text-align:center; margin:3rem 0 1rem; }
 .end img.px { width:180px; height:90px; margin:0 auto .4rem; }
@@ -70,21 +67,19 @@ html[lang=ru] [data-ru] { display:revert; }
     <nav class="lang" aria-label="Language"><button type="button" data-set="en" aria-pressed="true">English</button><button type="button" data-set="ru" aria-pressed="false">Русский</button></nav>
   </header>
 
-  <div class="hero"><img class="px" src="assets/header_odds2.gif" width="1152" height="288" alt="odds_ — signal source: unknown"></div>
-
   <main>
     <section class="about">
       <div>
         <h1>Mike Mailyan</h1>
-        <p class="intro" data-en>Independent iOS developer. I build companion apps for the table: card games, board games, poker nights and party games for friends in one room.</p>
-        <p class="intro" data-ru>Независимый iOS-разработчик. Делаю приложения-компаньоны для игрового стола: карточные и настольные игры, покерные вечера и игры для компании.</p>
+        <p class="intro" data-en>Independent iOS developer. I take apps from idea to the App Store on my own: games, trackers and everyday tools, built in Swift and SwiftUI, with care for the small details.</p>
+        <p class="intro" data-ru>Независимый iOS-разработчик. Сам веду приложения от идеи до App Store: игры, трекеры и полезные инструменты на Swift и SwiftUI, с вниманием к мелочам.</p>
 <pre class="term" data-en><span class="p">&gt; locate --self</span>
-  somewhere between a compiler and a card table
+  somewhere between a compiler and the next idea
 <span class="p">&gt; cat /etc/motive</span>
   the house always wins.
   unless the house is written in <span class="r">Swift</span>.</pre>
 <pre class="term" data-ru><span class="p">&gt; locate --self</span>
-  где-то между компилятором и игровым столом
+  где-то между компилятором и следующей идеей
 <span class="p">&gt; cat /etc/motive</span>
   казино всегда выигрывает.
   если только казино не написано на <span class="r">Swift</span>.</pre>
@@ -145,8 +140,6 @@ html[lang=ru] [data-ru] { display:revert; }
         </div>
       </li>
     </ul>
-
-    <img class="px divider" src="assets/divider_pulse.gif" width="768" height="44" alt="">
 
     <h2><code>ps aux | grep wip</code></h2>
     <ul class="apps wip">

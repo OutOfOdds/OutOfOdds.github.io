@@ -16,7 +16,7 @@ a:focus-visible, button:focus-visible { outline:1px solid var(--ember); outline-
 .lang button[aria-pressed=true] { color:var(--bone); }
 
 .type { margin:clamp(3rem,12vh,7rem) 0 1rem; font-size:clamp(20px,4.6vw,26px); min-height:1.6em; white-space:nowrap; overflow:hidden; }
-.type .caret { display:inline-block; width:.6em; height:2px; margin-left:2px; background:var(--ember); vertical-align:.12em; animation:smoulder 2.4s ease-in-out infinite; }
+.type .caret { display:inline-block; width:.62em; height:.11em; margin-left:.08em; background:var(--ember); vertical-align:-.22em; animation:smoulder 2.4s ease-in-out infinite; }
 @keyframes smoulder { 50% { opacity:.15; } }
 .lead { color:var(--fog); margin:0 0 clamp(3rem,10vh,5rem); }
 

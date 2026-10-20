@@ -22,6 +22,7 @@ a:focus-visible, button:focus-visible { outline:1px solid var(--ember); outline-
 
 .cmd { color:var(--dim); font-size:13px; margin:3.5rem 0 1rem; }
 .cmd::before { content:"> "; color:var(--ember); }
+.cmd .hint { color:var(--dim); opacity:.7; font-weight:400; margin-left:.4rem; }
 .list { list-style:none; margin:0; padding:0; }
 .list li { display:grid; grid-template-columns:28px auto 1fr; align-items:center; gap:0 14px; padding:7px 0; }
 .list img { width:28px; height:28px; display:block; image-rendering:pixelated; opacity:.9; }

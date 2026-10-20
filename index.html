@@ -4,197 +4,125 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>odds_ · Mike Mailyan</title>
-<meta name="description" content="Mike Mailyan (OutOfOdds) — hobbyist iOS developer who ships. Apps made for fun and used for real.">
-<meta property="og:title" content="odds_ · Mike Mailyan">
-<meta property="og:description" content="Hobbyist iOS developer who ships. Apps made for fun and used for real.">
-<meta property="og:image" content="https://outofodds.github.io/assets/monitor.gif">
+<meta name="description" content="Mike Mailyan (OutOfOdds). Builds quiet things, mostly for iOS.">
+<meta property="og:title" content="odds_">
+<meta property="og:description" content="Builds quiet things, mostly for iOS.">
+<meta name="theme-color" content="#0b0d0c">
 <!-- if you're reading the source, you're one of us. -->
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect width="32" height="32" rx="6" fill="%23050806"/%3E%3Ctext x="7" y="24" font-family="monospace" font-size="25" font-weight="700" fill="%23C5DFA2"%3Eo%3C/text%3E%3C/svg%3E'>
-<style>
-:root { --signal:#E04664; }
-img.px { image-rendering:pixelated; image-rendering:crisp-edges; display:block; }
-.lang { display:flex; gap:.4rem 1rem; margin-top:1.1rem; }
-.lang button { font:inherit; font-size:.875rem; color:var(--phosphor); background:none; border:0; padding:0; cursor:pointer; text-decoration:underline; text-underline-offset:.25em; text-decoration-color:rgba(197,223,162,.45); }
-.lang button[aria-pressed=true] { color:var(--ink); font-weight:700; text-decoration:none; }
-.lang button[aria-pressed=true]::before { content:"> "; color:var(--phosphor); }
-.lang button:focus-visible { outline:2px solid var(--phosphor); outline-offset:4px; }
-
-main { max-width:none; }
-.about { display:grid; grid-template-columns:1fr auto; gap:1.5rem; align-items:start; margin-top:2.2rem; }
-.about .monitor { width:120px; height:120px; }
-.term { margin:0; padding:1rem 1.1rem; background:var(--surface); border:1px solid var(--line); font-size:.95rem; line-height:1.6; white-space:pre-wrap; }
-.term .p { color:var(--phosphor); }
-.term .r { color:var(--signal); }
-.whisper { color:var(--muted); font-size:.85rem; margin-top:.4rem; }
-
-h2 code { font:inherit; }
-.apps { list-style:none; margin:0; padding:0; border-top:1px solid var(--line); }
-.app { display:grid; grid-template-columns:56px 1fr; gap:.15rem 1.1rem; padding:1.1rem 0; border-bottom:1px solid var(--line); }
-.app img.px { width:56px; height:56px; grid-row:span 3; border:1px solid var(--line); background:var(--background); }
-.app h3 { margin:0; font-size:1.05rem; line-height:1.35; display:flex; flex-wrap:wrap; align-items:baseline; gap:.2rem .8rem; }
-.app h3 .meta { color:var(--muted); font-size:.8rem; font-weight:400; }
-.app .sig { margin:0; color:var(--muted); font-style:italic; }
-.app .links { display:flex; flex-wrap:wrap; gap:.2rem 1.2rem; font-size:.9rem; margin-top:.35rem; }
-.app .links a::before { content:"→\00a0"; color:var(--muted); text-decoration:none; display:inline-block; }
-.state { font-style:normal; font-size:.75rem; font-weight:700; padding:0 .4rem; border:1px solid currentColor; }
-.state.ok { color:var(--phosphor); } .state.wip { color:var(--warning); } .state.live { color:var(--signal); }
-.wip .app h3 { color:var(--ink); }
-.redacted { background:var(--ink); color:var(--ink); user-select:none; }
-
-.contact { display:flex; flex-wrap:wrap; gap:.4rem 1.6rem; }
-.end { text-align:center; margin:3rem 0 1rem; }
-.end img.px { width:180px; height:90px; margin:0 auto .4rem; }
-.end code { color:var(--muted); font:inherit; font-size:.85rem; }
-footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.5rem 1.5rem; }
-footer p { margin:0; }
-
-@media (max-width:36rem) {
-  .about { grid-template-columns:1fr; }
-  .about .monitor { display:none; }
-  .app { grid-template-columns:44px 1fr; gap:.15rem .9rem; }
-  .app img.px { width:44px; height:44px; }
-}
-[data-ru] { display:none; }
-html[lang=ru] [data-en] { display:none; }
-html[lang=ru] [data-ru] { display:revert; }
-</style>
+<link rel="stylesheet" href="home.css">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect width="32" height="32" rx="6" fill="%230b0d0c"/%3E%3Ccircle cx="16" cy="16" r="4" fill="%23b23a48"/%3E%3C/svg%3E'>
 </head>
 <body>
 <div class="shell">
-  <header>
-    <a class="brand" href="./"><span class="wordmark" aria-label="odds">odds<span class="cursor" aria-hidden="true">_</span></span><span class="appname">Mike Mailyan · iOS</span></a>
-    <nav class="lang" aria-label="Language"><button type="button" data-set="en" aria-pressed="true">English</button><button type="button" data-set="ru" aria-pressed="false">Русский</button></nav>
-  </header>
+  <div class="top">
+    <span>odds_</span>
+    <nav class="lang" aria-label="Language"><button type="button" data-set="en" aria-pressed="true">en</button><button type="button" data-set="ru" aria-pressed="false">ru</button></nav>
+  </div>
 
   <main>
-    <section class="about">
-      <div>
-        <h1>Mike Mailyan</h1>
-        <p class="intro" data-en>Hobbyist iOS developer who ships. Apps made for fun and used for real: from idea to the App Store and supported after release, built in Swift and SwiftUI.</p>
-        <p class="intro" data-ru>Хобби-разработчик, который доводит до релиза. Приложения сделаны ради интереса, а работают всерьёз: от идеи до App Store и с поддержкой после выхода, на Swift и SwiftUI.</p>
-<pre class="term" data-en><span class="p">&gt; locate --self</span>
-  somewhere between a compiler and the next idea
-<span class="p">&gt; cat /etc/motive</span>
-  the house always wins.
-  unless the house is written in <span class="r">Swift</span>.</pre>
-<pre class="term" data-ru><span class="p">&gt; locate --self</span>
-  где-то между компилятором и следующей идеей
-<span class="p">&gt; cat /etc/motive</span>
-  казино всегда выигрывает.
-  если только казино не написано на <span class="r">Swift</span>.</pre>
-      </div>
-      <img class="px monitor" src="assets/monitor.gif" width="400" height="400" alt="">
-    </section>
+    <h1 class="type" aria-label="odds_"><span id="typed" aria-hidden="true">&gt; odds</span><span class="caret" aria-hidden="true"></span></h1>
+    <p class="lead" data-en>builds quiet things. mostly for ios.<br>some of them are finished.</p>
+    <p class="lead" data-ru>делаю тихие вещи. в основном для ios.<br>некоторые из них закончены.</p>
 
-    <h2 data-en><code>ls ~/released</code></h2><h2 data-ru><code>ls ~/released</code></h2>
-    <ul class="apps">
-      <li class="app">
-        <img class="px" src="assets/icon_oracle.gif" width="96" height="96" alt="">
-        <h3><a href="https://apps.apple.com/app/id1564639558"><span data-en>Oracle: Find the Mole</span><span data-ru>Оракул — Найди Крота</span></a><span class="meta">party game · 2026</span></h3>
-        <p class="sig" data-en>trust no one. not even the one who asked.</p>
-        <p class="sig" data-ru>не верь никому. даже тому, кто спросил.</p>
-        <div class="links">
-          <a href="https://apps.apple.com/app/id1564639558">App Store</a>
-          <a href="en-US/index.html" data-en>Support</a><a href="ru/index.html" data-ru>Поддержка</a>
-          <a href="en-US/privacy.html" data-en>Privacy</a><a href="ru/privacy.html" data-ru>Конфиденциальность</a>
-        </div>
+    <h2 class="cmd">ls ~/released</h2>
+    <ul class="list">
+      <li>
+        <img src="assets/icon_oracle.gif" width="96" height="96" alt="">
+        <a href="https://apps.apple.com/app/id1564639558">oracle</a>
+        <span class="note"><span data-en>knows more than it says.</span><span data-ru>знает больше, чем говорит.</span> <span class="year">2026</span></span>
+        <span class="more"><a href="en-US/index.html" data-en>support</a><a href="ru/index.html" data-ru>поддержка</a><a href="en-US/privacy.html" data-en>privacy</a><a href="ru/privacy.html" data-ru>конфиденциальность</a></span>
       </li>
-      <li class="app">
-        <img class="px" src="assets/icon_voidbound.gif" width="96" height="96" alt="">
-        <h3><a href="https://apps.apple.com/app/id6759371512">Voidbound: Sorcery TCG</a><span class="meta">TCG companion · 2026</span></h3>
-        <p class="sig" data-en>the void counts your life points so you don't have to.</p>
-        <p class="sig" data-ru>пустота считает твои жизни, чтобы тебе не пришлось.</p>
-        <div class="links"><a href="https://apps.apple.com/app/id6759371512">App Store</a></div>
+      <li>
+        <img src="assets/icon_voidbound.gif" width="96" height="96" alt="">
+        <a href="https://apps.apple.com/app/id6759371512">voidbound</a>
+        <span class="note"><span data-en>counts, so you don't have to.</span><span data-ru>считает, чтобы не пришлось тебе.</span> <span class="year">2026</span></span>
       </li>
-      <li class="app">
-        <img class="px" src="assets/icon_flipscore.gif" width="96" height="96" alt="">
-        <h3><a href="https://apps.apple.com/app/id6747075064">Flip &amp; Score</a><span class="meta">score keeper · 2025</span></h3>
-        <p class="sig" data-en>push your luck. it will be written down.</p>
-        <p class="sig" data-ru>испытай удачу. её запишут.</p>
-        <div class="links"><a href="https://apps.apple.com/app/id6747075064">App Store</a></div>
+      <li>
+        <img src="assets/icon_flipscore.gif" width="96" height="96" alt="">
+        <a href="https://apps.apple.com/app/id6747075064">flip &amp; score</a>
+        <span class="note"><span data-en>everything is written down.</span><span data-ru>всё записано.</span> <span class="year">2025</span></span>
       </li>
-      <li class="app">
-        <img class="px" src="assets/icon_riichi.gif" width="96" height="96" alt="">
-        <h3><a href="https://apps.apple.com/app/id6499211526">RiichiClub</a><span class="meta">riichi mahjong · 2024</span></h3>
-        <p class="sig" data-en>the tiles are silent. the scoreboard is not.</p>
-        <p class="sig" data-ru>тайлы молчат. табло — нет.</p>
-        <div class="links"><a href="https://apps.apple.com/app/id6499211526">App Store</a></div>
+      <li>
+        <img src="assets/icon_riichi.gif" width="96" height="96" alt="">
+        <a href="https://apps.apple.com/app/id6499211526">riichiclub</a>
+        <span class="note"><span data-en>keeps the score. keeps quiet.</span><span data-ru>ведёт счёт. молчит.</span> <span class="year">2024</span></span>
       </li>
-      <li class="app">
-        <img class="px" src="assets/icon_tmhelper.gif" width="96" height="96" alt="">
-        <h3><a href="https://apps.apple.com/app/id1627456078">TMHelper</a><span class="meta">Terraforming Mars · 2022</span></h3>
-        <p class="sig" data-en>mars won't terraform itself. but it will be tracked.</p>
-        <p class="sig" data-ru>марс сам себя не терраформирует. но всё будет учтено.</p>
-        <div class="links"><a href="https://apps.apple.com/app/id1627456078">App Store</a></div>
+      <li>
+        <img src="assets/icon_tmhelper.gif" width="96" height="96" alt="">
+        <a href="https://apps.apple.com/app/id1627456078">tmhelper</a>
+        <span class="note"><span data-en>tracks what you'd forget.</span><span data-ru>помнит то, что ты бы забыл.</span> <span class="year">2022</span></span>
       </li>
-      <li class="app">
-        <img class="px" src="assets/icon_pokerlog.gif" width="96" height="96" alt="">
-        <h3><a href="https://apps.apple.com/app/id1547807748">PokerLog</a><span class="meta">poker tracker · 2021</span></h3>
-        <p class="sig" data-en>the house always remembers.</p>
-        <p class="sig" data-ru>казино всё помнит.</p>
-        <div class="links">
-          <a href="https://apps.apple.com/app/id1547807748">App Store</a>
-          <a href="https://outofodds.github.io/PokerLog-Site/" data-en>Website &amp; wiki</a><a href="https://outofodds.github.io/PokerLog-Site/" data-ru>Сайт и вики</a>
-          <a href="https://outofodds.github.io/pokerlog-ideas/" data-en>Ideas board</a><a href="https://outofodds.github.io/pokerlog-ideas/" data-ru>Доска идей</a>
-        </div>
+      <li>
+        <img src="assets/icon_pokerlog.gif" width="96" height="96" alt="">
+        <a href="https://apps.apple.com/app/id1547807748">pokerlog</a>
+        <span class="note"><span data-en>remembers.</span><span data-ru>помнит.</span> <span class="year">2021</span></span>
+        <span class="more"><a href="https://outofodds.github.io/PokerLog-Site/" data-en>site &amp; wiki</a><a href="https://outofodds.github.io/PokerLog-Site/" data-ru>сайт и вики</a><a href="https://outofodds.github.io/pokerlog-ideas/" data-en>ideas</a><a href="https://outofodds.github.io/pokerlog-ideas/" data-ru>идеи</a></span>
       </li>
     </ul>
 
-    <h2><code>ps aux | grep wip</code></h2>
-    <ul class="apps wip">
-      <li class="app">
-        <img class="px" src="assets/icon_capsula.gif" width="96" height="96" alt="">
-        <h3>Capsula <em class="state wip">ON-TIME</em></h3>
-        <p class="sig" data-en>every dose has its hour. it remembers, so you don't have to.</p>
-        <p class="sig" data-ru>у каждой дозы свой час. он помнит, чтобы не пришлось тебе.</p>
-        <div class="links"><a href="https://outofodds.github.io/Capsula-Site/" data-en>Website · get notified</a><a href="https://outofodds.github.io/Capsula-Site/" data-ru>Сайт · узнать о запуске</a></div>
+    <h2 class="cmd">ps aux | grep wip</h2>
+    <ul class="list">
+      <li>
+        <img src="assets/icon_capsula.gif" width="96" height="96" alt="">
+        <a href="https://outofodds.github.io/Capsula-Site/">capsula</a>
+        <span class="note"><span data-en>every dose has its hour.</span><span data-ru>у каждой дозы свой час.</span></span>
       </li>
-      <li class="app">
-        <img class="px" src="assets/icon_pokerlog.gif" width="96" height="96" alt="">
-        <h3>PokerLog 2.0 <em class="state wip">REWRITING</em></h3>
-        <p class="sig" data-en>the log is learning new tricks.</p>
-        <p class="sig" data-ru>журнал учится новым трюкам.</p>
-        <div class="links"><a href="https://outofodds.github.io/PokerLog-Site/" data-en>What's coming</a><a href="https://outofodds.github.io/PokerLog-Site/" data-ru>Что будет нового</a></div>
+      <li>
+        <img src="assets/icon_drip.gif" width="96" height="96" alt="">
+        <span>drip</span>
+        <span class="note"><span data-en>one drop at a time.</span><span data-ru>по капле.</span></span>
       </li>
-      <li class="app">
-        <img class="px" src="assets/icon_drip.gif" width="96" height="96" alt="">
-        <h3>Drip <em class="state wip">DRIPPING</em></h3>
-        <p class="sig" data-en>slowly. one drop at a time.</p>
-        <p class="sig" data-ru>медленно. по капле.</p>
+      <li>
+        <img src="assets/icon_pokerlog.gif" width="96" height="96" alt="">
+        <span>pokerlog 2.0</span>
+        <span class="note"><span data-en>rewriting itself.</span><span data-ru>переписывает себя.</span></span>
       </li>
-      <li class="app">
-        <img class="px" src="assets/icon_homepoker.gif" width="96" height="96" alt="">
-        <h3><span class="redacted" aria-label="classified">████████</span> <em class="state live">0x??</em></h3>
-        <p class="sig" data-en>and something else. you'll know when you see it.</p>
-        <p class="sig" data-ru>и кое-что ещё. узнаешь, когда увидишь.</p>
+      <li>
+        <span class="blank" aria-hidden="true"></span>
+        <span class="redacted" aria-label="classified">████████</span>
+        <span class="note"><span data-en>you'll know when you see it.</span><span data-ru>узнаешь, когда увидишь.</span></span>
       </li>
     </ul>
-
-    <h2><code>transmit</code></h2>
-    <div class="contact">
-      <a href="mailto:Mihomailian@gmail.com">Mihomailian@gmail.com</a>
-      <a href="https://github.com/OutOfOdds">github.com/OutOfOdds</a>
-      <a href="https://apps.apple.com/developer/mike-mailyan/id1547807750" data-en>All apps on the App Store</a><a href="https://apps.apple.com/developer/mike-mailyan/id1547807750" data-ru>Все приложения в App Store</a>
-    </div>
-    <p class="whisper" data-en>replies are not guaranteed. but they are likely.</p>
-    <p class="whisper" data-ru>ответ не гарантирован. но вероятен.</p>
-
-    <div class="end">
-      <img class="px" src="assets/footer_tvoff.gif" width="480" height="240" alt="">
-      <code data-en>// end of transmission. roll again?</code>
-      <code data-ru>// конец передачи. бросишь ещё раз?</code>
-    </div>
   </main>
-  <footer><p>© 2026 Mike Mailyan</p><p>01101111 01100100 01100100 01110011</p></footer>
+
+  <footer class="end">
+    <span class="dot" aria-hidden="true"></span>
+    <details>
+      <summary>▓▓▓</summary>
+      <p data-en>you opened it anyway.</p><p data-ru>ты всё-таки открыл.</p>
+      <p><a href="mailto:Mihomailian@gmail.com">Mihomailian@gmail.com</a> · <a href="https://github.com/OutOfOdds">github</a> · <a href="https://apps.apple.com/developer/mike-mailyan/id1547807750">app store</a></p>
+    </details>
+    <span><span data-en>// you were never here.</span><span data-ru>// тебя здесь не было.</span></span>
+  </footer>
 </div>
 <script>
 (function () {
   var root = document.documentElement, buttons = document.querySelectorAll('[data-set]');
-  function set(lang) {
-    root.lang = lang;
-    buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === lang); });
-    try { localStorage.setItem('lang', lang); } catch (e) {}
+  var lines = {
+    en: ['> odds', '> signal source: unknown', '> connection established...', "> you weren't supposed to find this."],
+    ru: ['> odds', '> источник сигнала: неизвестен', '> соединение установлено...', '> ты не должен был это найти.']
+  };
+  var lang = 'en', typed = document.getElementById('typed'), timer = null;
+  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function run() {
+    clearTimeout(timer);
+    if (still) { typed.textContent = lines[lang][0]; return; }
+    var i = 0, n = 0, del = false;
+    (function tick() {
+      var s = lines[lang][i];
+      typed.textContent = s.slice(0, n);
+      if (!del && n < s.length) { n++; timer = setTimeout(tick, 70 + Math.random() * 60); }
+      else if (!del) { del = true; timer = setTimeout(tick, 2200); }
+      else if (n > 0) { n--; timer = setTimeout(tick, 28); }
+      else { del = false; i = (i + 1) % lines[lang].length; timer = setTimeout(tick, 500); }
+    })();
+  }
+  function set(l) {
+    lang = l; root.lang = l;
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === l); });
+    try { localStorage.setItem('lang', l); } catch (e) {}
+    run();
   }
   var saved = null;
   try { saved = localStorage.getItem('lang'); } catch (e) {}

@@ -1,0 +1,52 @@
+/* Quiet homepage. Iosevka is subset to Latin and Cyrillic (fonts/OFL.txt). */
+@font-face { font-family:"Iosevka"; src:url("fonts/Iosevka-Regular.woff2") format("woff2"); font-weight:400; font-display:swap; }
+@font-face { font-family:"Iosevka"; src:url("fonts/Iosevka-Bold.woff2") format("woff2"); font-weight:700; font-display:swap; }
+:root { color-scheme:dark; --void:#0b0d0c; --ash:#232826; --fog:#8b918a; --dim:#5f665f; --bone:#c9cbc3; --ember:#b23a48; }
+* { box-sizing:border-box; }
+html { background:var(--void); }
+body { margin:0; min-height:100vh; color:var(--bone); background:var(--void); font:15px/1.75 "Iosevka",ui-monospace,SFMono-Regular,Menlo,monospace; }
+a { color:var(--bone); text-decoration:none; border-bottom:1px solid var(--ash); transition:border-color .3s, color .3s; }
+a:hover { border-color:var(--ember); color:#fff; }
+a:focus-visible, button:focus-visible { outline:1px solid var(--ember); outline-offset:4px; }
+.shell { max-width:40rem; margin:0 auto; padding:clamp(3rem,10vh,6rem) 16px 3rem; }
+
+.top { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; color:var(--dim); font-size:13px; }
+.lang { display:flex; gap:1rem; }
+.lang button { font:inherit; color:var(--dim); background:none; border:0; padding:0; cursor:pointer; }
+.lang button[aria-pressed=true] { color:var(--bone); }
+
+.type { margin:clamp(3rem,12vh,7rem) 0 1rem; font-size:clamp(20px,4.6vw,26px); min-height:1.6em; white-space:nowrap; overflow:hidden; }
+.type .caret { display:inline-block; width:.6em; height:2px; margin-left:2px; background:var(--ember); vertical-align:.12em; animation:smoulder 2.4s ease-in-out infinite; }
+@keyframes smoulder { 50% { opacity:.15; } }
+.lead { color:var(--fog); margin:0 0 clamp(3rem,10vh,5rem); }
+
+.cmd { color:var(--dim); font-size:13px; margin:3.5rem 0 1rem; }
+.cmd::before { content:"> "; color:var(--ember); }
+.list { list-style:none; margin:0; padding:0; }
+.list li { display:grid; grid-template-columns:28px auto 1fr; align-items:center; gap:0 14px; padding:7px 0; }
+.list img { width:28px; height:28px; display:block; image-rendering:pixelated; opacity:.9; }
+.list .note { color:var(--fog); font-size:13px; min-width:0; }
+.list li > a, .list li > span:not(.note):not(.more) { justify-self:start; }
+.list .note .year { color:var(--dim); }
+.list .more { grid-column:2 / -1; font-size:12px; color:var(--dim); display:flex; flex-wrap:wrap; gap:.2rem 1rem; }
+.list .more a { color:var(--dim); border-color:transparent; }
+.list .more a:hover { color:var(--bone); border-color:var(--ember); }
+.redacted { background:var(--ash); color:var(--ash); user-select:none; }
+.blank { width:28px; height:28px; border:1px dashed var(--ash); }
+
+.end { margin-top:5rem; padding-top:2rem; border-top:1px solid var(--ash); display:flex; flex-direction:column; align-items:center; gap:1.2rem; font-size:13px; color:var(--dim); text-align:center; }
+.dot { width:6px; height:6px; border-radius:50%; background:var(--ember); }
+details summary { cursor:pointer; list-style:none; color:var(--dim); letter-spacing:.2em; }
+details summary::-webkit-details-marker { display:none; }
+details[open] summary { color:var(--bone); }
+details p { margin:.8rem 0 0; color:var(--fog); }
+
+[data-ru] { display:none; }
+html[lang=ru] [data-en] { display:none; }
+html[lang=ru] [data-ru] { display:revert; }
+
+@media (max-width:30rem) {
+  .list li { grid-template-columns:28px 1fr; }
+  .list .note { grid-column:2; }
+}
+@media (prefers-reduced-motion:reduce) { .type .caret { animation:none; } a { transition:none; } }

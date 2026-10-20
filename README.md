@@ -1,2 +1,2 @@
 # OutOfOdds.github.io
-Developer site for Oracle: Find the Mole (app-ads.tx)
+Developer site of Mike Mailyan (OutOfOdds): portfolio, app support pages and app-ads.txt

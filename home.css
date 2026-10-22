@@ -1,16 +1,22 @@
 /* oddly working: studio homepage.
    Layout: one pair of tight margins; the name runs huge, the apps are a full-bleed log of rows,
    work in progress is a shelf, support is a split. Pixel art only in icons, the caret and the footer TV.
-   Fonts: Instrument Sans (OFL), Departure Mono (MIT) for small labels. See fonts/. */
-@font-face { font-family:"Instrument Sans"; src:url("fonts/InstrumentSans-400.woff2") format("woff2"); font-weight:400; font-display:swap; }
-@font-face { font-family:"Instrument Sans"; src:url("fonts/InstrumentSans-600.woff2") format("woff2"); font-weight:600; font-display:swap; }
-@font-face { font-family:"Instrument Sans"; src:url("fonts/InstrumentSans-700.woff2") format("woff2"); font-weight:700; font-display:swap; }
+   Fonts: Geologica for text, Martian Mono for small labels (both OFL), Departure Mono (MIT) for the pixel wordmark. See fonts/. */
+@font-face { font-family:"Geologica"; src:url("fonts/Geologica-latin-400.woff2") format("woff2"); font-weight:400; font-display:swap; unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family:"Geologica"; src:url("fonts/Geologica-cyrillic-400.woff2") format("woff2"); font-weight:400; font-display:swap; unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family:"Geologica"; src:url("fonts/Geologica-latin-600.woff2") format("woff2"); font-weight:600; font-display:swap; unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family:"Geologica"; src:url("fonts/Geologica-cyrillic-600.woff2") format("woff2"); font-weight:600; font-display:swap; unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family:"Geologica"; src:url("fonts/Geologica-latin-700.woff2") format("woff2"); font-weight:700; font-display:swap; unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family:"Geologica"; src:url("fonts/Geologica-cyrillic-700.woff2") format("woff2"); font-weight:700; font-display:swap; unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family:"Martian Mono"; src:url("fonts/MartianMono-latin-400.woff2") format("woff2"); font-weight:400; font-display:swap; unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family:"Martian Mono"; src:url("fonts/MartianMono-cyrillic-400.woff2") format("woff2"); font-weight:400; font-display:swap; unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
 @font-face { font-family:"Departure Mono"; src:url("fonts/DepartureMono-Regular.woff2") format("woff2"); font-weight:400; font-display:swap; }
 
 :root {
   color-scheme:dark;
   --bg:#0a0a0a; --step:#141414; --ink:#ececea; --soft:#a3a3a0; --faint:#7d7d7a; --ember:#c8414f;
-  --text:"Instrument Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --text:"Geologica", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --label:"Martian Mono", ui-monospace, Menlo, monospace;
   --pixel:"Departure Mono", ui-monospace, Menlo, monospace;
   --m:max(16px, min(2.4vw, 32px));
   --gap:clamp(96px, 14vw, 200px);
@@ -18,7 +24,7 @@
 
 * { box-sizing:border-box; }
 html { background:var(--bg); -webkit-text-size-adjust:100%; }
-body { margin:0; color:var(--ink); background:var(--bg); font:17px/1.55 var(--text); font-feature-settings:"ss01"; overflow-x:hidden; }
+body { margin:0; color:var(--ink); background:var(--bg); font:17px/1.55 var(--text); overflow-x:hidden; }
 img { max-width:100%; }
 a { color:inherit; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:.2em; text-decoration-color:var(--faint); transition:text-decoration-color .2s, color .2s; }
 a:hover { text-decoration-color:var(--ember); }
@@ -32,7 +38,7 @@ h1, h2, h3, p, dl, dd { margin:0; }
 
 /* bar */
 .bar { display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:max(16px, env(safe-area-inset-top, 0px)); min-height:64px; }
-.mark { font:13px/1 var(--pixel); text-decoration:none; color:var(--ink); }
+.mark { font:11px/1 var(--pixel); text-decoration:none; color:var(--ink); }
 .bar nav { display:flex; gap:4px 20px; flex-wrap:wrap; justify-content:flex-end; }
 .bar nav a { display:inline-block; padding:10px 0; font-size:16px; text-decoration-color:transparent; color:var(--soft); }
 .bar nav a:hover { color:var(--ink); text-decoration-color:var(--ember); }
@@ -44,14 +50,14 @@ h1 { font-weight:700; font-size:min(14.2vw, 270px); line-height:.84; letter-spac
 @keyframes blink { 50% { opacity:0; } }
 .hero-foot { display:grid; grid-template-columns:minmax(0, 7fr) minmax(0, 5fr); gap:24px var(--m); align-items:end; margin-top:clamp(32px, 4vw, 56px); }
 .lead { font-size:clamp(22px, 2.3vw, 34px); line-height:1.25; letter-spacing:-.015em; max-width:24ch; }
-.signal { font:13px/1.6 var(--pixel); color:var(--soft); min-height:1.6em; justify-self:end; text-align:right; }
+.signal { font:12px/1.6 var(--label); color:var(--soft); min-height:1.6em; justify-self:end; text-align:right; }
 .prompt { color:var(--ember); }
 
 /* sections */
 .block { margin-top:var(--gap); }
 .head { display:flex; justify-content:space-between; align-items:baseline; gap:8px 24px; flex-wrap:wrap; margin-bottom:clamp(20px, 3vw, 40px); }
 h2 { font-weight:700; font-size:clamp(40px, 6vw, 96px); line-height:.95; letter-spacing:-.045em; }
-.count { font:13px/1.6 var(--pixel); color:var(--soft); }
+.count { font:12px/1.6 var(--label); color:var(--soft); }
 
 /* the log of released apps */
 .apps { list-style:none; margin:0; padding:0; }
@@ -62,7 +68,8 @@ h2 { font-weight:700; font-size:clamp(40px, 6vw, 96px); line-height:.95; letter-
 .apps li:nth-child(odd) { background:var(--step); }
 .apps img { display:block; width:72px; height:72px; image-rendering:pixelated; }
 .apps h3 { font-weight:600; font-size:clamp(22px, 2.1vw, 30px); line-height:1.1; letter-spacing:-.025em; }
-.kind { font:13px/1.6 var(--pixel); color:var(--soft); margin-top:6px; }
+.desc { margin-top:6px; max-width:44ch; }
+.year { font:12px/1.6 var(--label); color:var(--faint); margin-left:6px; white-space:nowrap; }
 .line { color:var(--soft); }
 .links { display:flex; flex-wrap:wrap; gap:0 18px; }
 .apps .links { justify-content:flex-end; }
@@ -84,7 +91,7 @@ h2 { font-weight:700; font-size:clamp(40px, 6vw, 96px); line-height:.95; letter-
 .main-mail { font-size:clamp(20px, 2vw, 28px); font-weight:600; letter-spacing:-.02em; overflow-wrap:anywhere; }
 .mail { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:0 var(--m); background:var(--step); padding:clamp(16px, 2.4vw, 32px); }
 .mail div { padding:12px 0; min-width:0; }
-.mail dt { font:13px/1.6 var(--pixel); color:var(--soft); }
+.mail dt { font:12px/1.6 var(--label); color:var(--soft); }
 .mail dd { overflow-wrap:anywhere; }
 
 /* end */
@@ -92,7 +99,7 @@ h2 { font-weight:700; font-size:clamp(40px, 6vw, 96px); line-height:.95; letter-
 .tv img { display:block; width:288px; height:auto; image-rendering:pixelated; }
 .end-text { display:flex; flex-direction:column; gap:10px; align-items:flex-end; text-align:right; color:var(--soft); font-size:15px; }
 .end-text .links { justify-content:flex-end; color:var(--ink); }
-.ghost { font:13px/1.6 var(--pixel); color:var(--faint); }
+.ghost { font:12px/1.6 var(--label); color:var(--faint); }
 details summary { cursor:pointer; list-style:none; color:var(--faint); letter-spacing:.2em; padding:6px 0; }
 details summary::-webkit-details-marker { display:none; }
 details[open] summary { color:var(--ink); }

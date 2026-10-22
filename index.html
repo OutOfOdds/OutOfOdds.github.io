@@ -2,132 +2,157 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>odds · Mike Mailyan</title>
-<meta name="description" content="Mike Mailyan (OutOfOdds). Builds quiet things, mostly for iOS.">
-<meta property="og:title" content="odds">
-<meta property="og:description" content="Builds quiet things, mostly for iOS.">
-<meta name="theme-color" content="#0b0d0c">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>oddly working · Mike Mailyan</title>
+<meta name="description" content="oddly working is Mike Mailyan's one-person iOS studio. Builds quiet things, mostly for iOS. Some of them are finished.">
+<meta property="og:title" content="oddly working">
+<meta property="og:description" content="Builds quiet things, mostly for iOS. Some of them are finished.">
+<meta name="theme-color" content="#0a0a0a">
 <!-- if you're reading the source, you're one of us. -->
+<link rel="preload" href="fonts/InstrumentSans-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="home.css">
-<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect width="32" height="32" rx="6" fill="%230b0d0c"/%3E%3Ccircle cx="16" cy="16" r="4" fill="%23b23a48"/%3E%3C/svg%3E'>
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect width="32" height="32" rx="6" fill="%230a0a0a"/%3E%3Crect x="12" y="10" width="8" height="12" fill="%23c8414f"/%3E%3C/svg%3E'>
 </head>
 <body>
-<div class="shell">
-  <div class="top">
-    <span>odds</span>
-    <nav class="lang" aria-label="Language"><button type="button" data-set="en" aria-pressed="true">en</button><button type="button" data-set="ru" aria-pressed="false">ru</button></nav>
-  </div>
+<a class="skip" href="#working">Skip to apps</a>
 
-  <main>
-    <h1 class="type" aria-label="odds"><span id="typed" aria-hidden="true">&gt; odds</span><span class="caret" aria-hidden="true"></span></h1>
-    <p class="lead" data-en>builds quiet things. mostly for ios.<br>some of them are finished.</p>
-    <p class="lead" data-ru>делаю тихие вещи. в основном для ios.<br>некоторые из них закончены.</p>
+<header class="bar wrap">
+  <a class="mark" href="/" aria-label="oddly working, home">oddly working</a>
+  <nav aria-label="Site">
+    <a href="#working">Apps</a>
+    <a href="#support">Support</a>
+    <a href="https://github.com/OutOfOdds">GitHub</a>
+  </nav>
+</header>
 
-    <h2 class="cmd">ls ~/released <span class="hint" data-en>— released</span><span class="hint" data-ru>— вышло</span></h2>
-    <ul class="list">
+<main>
+  <section class="hero wrap" aria-labelledby="title">
+    <h1 id="title">oddly <span class="nowrap">working<span class="caret" aria-hidden="true"></span></span></h1>
+    <div class="hero-foot">
+      <p class="lead">Mike Mailyan builds quiet things, mostly for iOS. Some of them are finished.</p>
+      <p class="signal" aria-hidden="true"><span class="prompt">&gt;</span> <span id="typed">signal source: unknown</span></p>
+    </div>
+  </section>
+
+  <section id="working" class="block" aria-labelledby="working-h">
+    <div class="wrap head">
+      <h2 id="working-h">Working</h2>
+      <p class="count">6 apps on the App Store</p>
+    </div>
+    <ul class="apps">
       <li>
-        <img src="assets/icon_oracle.gif" width="96" height="96" alt="">
-        <a href="https://apps.apple.com/app/id1564639558">oracle</a>
-        <span class="note"><span data-en>knows more than it says.</span><span data-ru>знает больше, чем говорит.</span> <span class="year">2026</span></span>
-        <span class="more"><a href="en-US/index.html" data-en>support</a><a href="ru/index.html" data-ru>поддержка</a><a href="en-US/privacy.html" data-en>privacy</a><a href="ru/privacy.html" data-ru>конфиденциальность</a></span>
+        <picture><source srcset="assets/still/icon_oracle.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_oracle.gif" width="96" height="96" alt="Oracle app icon: a pixel eye"></picture>
+        <div class="who"><h3>Oracle: Find the Mole</h3><p class="kind">word party game · since 2026</p></div>
+        <p class="line">Knows more than it says.</p>
+        <p class="links"><a href="https://apps.apple.com/app/id1564639558">App Store</a><a href="en-US/index.html">Support</a><a href="en-US/privacy.html">Privacy</a></p>
       </li>
       <li>
-        <img src="assets/icon_voidbound.gif" width="96" height="96" alt="">
-        <a href="https://apps.apple.com/app/id6759371512">voidbound</a>
-        <span class="note"><span data-en>counts, so you don't have to.</span><span data-ru>считает, чтобы не пришлось тебе.</span> <span class="year">2026</span></span>
+        <picture><source srcset="assets/still/icon_voidbound.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_voidbound.gif" width="96" height="96" alt="Voidbound app icon: a pixel vortex"></picture>
+        <div class="who"><h3>Voidbound: Sorcery TCG</h3><p class="kind">tcg companion · since 2026</p></div>
+        <p class="line">Counts, so you don't have to.</p>
+        <p class="links"><a href="https://apps.apple.com/app/id6759371512">App Store</a><a href="mailto:voidbound@oddlyworking.app">Support</a></p>
       </li>
       <li>
-        <img src="assets/icon_flipscore.gif" width="96" height="96" alt="">
-        <a href="https://apps.apple.com/app/id6747075064">flip &amp; score</a>
-        <span class="note"><span data-en>everything is written down.</span><span data-ru>всё записано.</span> <span class="year">2025</span></span>
+        <picture><source srcset="assets/still/icon_flipscore.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_flipscore.gif" width="96" height="96" alt="Flip &amp; Score app icon: a pixel playing card"></picture>
+        <div class="who"><h3>Flip &amp; Score</h3><p class="kind">score keeper · since 2025</p></div>
+        <p class="line">Everything is written down.</p>
+        <p class="links"><a href="https://apps.apple.com/app/id6747075064">App Store</a><a href="mailto:flipscore@oddlyworking.app">Support</a></p>
       </li>
       <li>
-        <img src="assets/icon_riichi.gif" width="96" height="96" alt="">
-        <a href="https://apps.apple.com/app/id6499211526">riichiclub</a>
-        <span class="note"><span data-en>keeps the score. keeps quiet.</span><span data-ru>ведёт счёт. молчит.</span> <span class="year">2024</span></span>
+        <picture><source srcset="assets/still/icon_riichi.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_riichi.gif" width="96" height="96" alt="RiichiClub app icon: a pixel mahjong tile"></picture>
+        <div class="who"><h3>RiichiClub</h3><p class="kind">riichi mahjong scores · since 2024</p></div>
+        <p class="line">Keeps the score. Keeps quiet.</p>
+        <p class="links"><a href="https://apps.apple.com/app/id6499211526">App Store</a><a href="mailto:riichi@oddlyworking.app">Support</a></p>
       </li>
       <li>
-        <img src="assets/icon_tmhelper.gif" width="96" height="96" alt="">
-        <a href="https://apps.apple.com/app/id1627456078">tmhelper</a>
-        <span class="note"><span data-en>tracks what you'd forget.</span><span data-ru>помнит то, что ты бы забыл.</span> <span class="year">2022</span></span>
+        <picture><source srcset="assets/still/icon_tmhelper.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_tmhelper.gif" width="96" height="96" alt="TMHelper app icon: a pixel planet"></picture>
+        <div class="who"><h3>TMHelper</h3><p class="kind">board game helper · since 2022</p></div>
+        <p class="line">Tracks what you'd forget.</p>
+        <p class="links"><a href="https://apps.apple.com/app/id1627456078">App Store</a><a href="mailto:tmhelper@oddlyworking.app">Support</a></p>
       </li>
       <li>
-        <img src="assets/icon_pokerlog.gif" width="96" height="96" alt="">
-        <a href="https://apps.apple.com/app/id1547807748">pokerlog</a>
-        <span class="note"><span data-en>remembers.</span><span data-ru>помнит.</span> <span class="year">2021</span></span>
-        <span class="more"><a href="https://outofodds.github.io/PokerLog-Site/" data-en>site &amp; wiki</a><a href="https://outofodds.github.io/PokerLog-Site/" data-ru>сайт и вики</a><a href="https://outofodds.github.io/pokerlog-ideas/" data-en>ideas</a><a href="https://outofodds.github.io/pokerlog-ideas/" data-ru>идеи</a></span>
+        <picture><source srcset="assets/still/icon_pokerlog.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_pokerlog.gif" width="96" height="96" alt="PokerLog app icon: a pixel poker chip"></picture>
+        <div class="who"><h3>PokerLog</h3><p class="kind">poker session log · since 2021</p></div>
+        <p class="line">Remembers.</p>
+        <p class="links"><a href="https://apps.apple.com/app/id1547807748">App Store</a><a href="mailto:pokerlog@oddlyworking.app">Support</a><a href="https://outofodds.github.io/PokerLog-Site/">Site &amp; wiki</a><a href="https://outofodds.github.io/pokerlog-ideas/">Ideas</a></p>
       </li>
     </ul>
+  </section>
 
-    <h2 class="cmd">ps aux | grep wip <span class="hint" data-en>— in progress</span><span class="hint" data-ru>— в работе</span></h2>
-    <ul class="list">
+  <section id="wip" class="block wip" aria-labelledby="wip-h">
+    <div class="wrap head">
+      <h2 id="wip-h">Not working yet</h2>
+      <p class="count">in progress</p>
+    </div>
+    <ul class="shelf wrap">
       <li>
-        <img src="assets/icon_capsula.gif" width="96" height="96" alt="">
-        <a href="https://outofodds.github.io/Capsula-Site/">capsula</a>
-        <span class="note"><span data-en>every dose has its hour.</span><span data-ru>у каждой дозы свой час.</span></span>
+        <picture><source srcset="assets/still/icon_capsula.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_capsula.gif" width="96" height="96" alt="Capsula app icon: a pixel pill"></picture>
+        <h3><a href="https://outofodds.github.io/Capsula-Site/">Capsula</a></h3>
+        <p>Medication reminders. Every dose has its hour.</p>
       </li>
       <li>
-        <img src="assets/icon_drip.gif" width="96" height="96" alt="">
-        <span>drip</span>
-        <span class="note"><span data-en>one drop at a time.</span><span data-ru>по капле.</span></span>
+        <picture><source srcset="assets/still/icon_drip.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_drip.gif" width="96" height="96" alt="Drip app icon: a pixel drop falling"></picture>
+        <h3>Drip</h3>
+        <p>One drop at a time.</p>
       </li>
       <li>
-        <img src="assets/icon_pokerlog.gif" width="96" height="96" alt="">
-        <span>pokerlog 2.0</span>
-        <span class="note"><span data-en>rewriting itself.</span><span data-ru>переписывает себя.</span></span>
+        <picture><source srcset="assets/still/icon_pokerlog.png" media="(prefers-reduced-motion: reduce)"><img src="assets/icon_pokerlog.gif" width="96" height="96" alt="PokerLog app icon: a pixel poker chip"></picture>
+        <h3>PokerLog 2.0</h3>
+        <p>Rewriting itself.</p>
       </li>
       <li>
         <span class="blank" aria-hidden="true"></span>
-        <span class="redacted" aria-label="classified">████████</span>
-        <span class="note"><span data-en>you'll know when you see it.</span><span data-ru>узнаешь, когда увидишь.</span></span>
+        <h3><span class="redacted" aria-hidden="true">████████</span><span class="sr">Classified</span></h3>
+        <p>You'll know when you see it.</p>
       </li>
     </ul>
-  </main>
+  </section>
 
-  <footer class="end">
-    <span class="dot" aria-hidden="true"></span>
-    <p class="contact"><a href="mailto:Mihomailian@gmail.com">Mihomailian@gmail.com</a> · <a href="https://github.com/OutOfOdds">github</a> · <a href="https://apps.apple.com/developer/mike-mailyan/id1547807750">app store</a></p>
+  <section id="support" class="block support wrap" aria-labelledby="support-h">
+    <div class="ask">
+      <h2 id="support-h">Something broke?</h2>
+      <p>Write to the app's own address and say which app, which version and what happened. One person reads all of them.</p>
+      <p class="main-mail"><a href="mailto:support@oddlyworking.app">support@oddlyworking.app</a></p>
+    </div>
+    <dl class="mail">
+      <div><dt>Capsula</dt><dd><a href="mailto:capsula@oddlyworking.app">capsula@oddlyworking.app</a></dd></div>
+      <div><dt>PokerLog</dt><dd><a href="mailto:pokerlog@oddlyworking.app">pokerlog@oddlyworking.app</a></dd></div>
+      <div><dt>Oracle</dt><dd><a href="mailto:oracle@oddlyworking.app">oracle@oddlyworking.app</a></dd></div>
+      <div><dt>RiichiClub</dt><dd><a href="mailto:riichi@oddlyworking.app">riichi@oddlyworking.app</a></dd></div>
+      <div><dt>Voidbound</dt><dd><a href="mailto:voidbound@oddlyworking.app">voidbound@oddlyworking.app</a></dd></div>
+      <div><dt>Flip &amp; Score</dt><dd><a href="mailto:flipscore@oddlyworking.app">flipscore@oddlyworking.app</a></dd></div>
+      <div><dt>TMHelper</dt><dd><a href="mailto:tmhelper@oddlyworking.app">tmhelper@oddlyworking.app</a></dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer class="end wrap">
+  <picture class="tv"><source srcset="assets/still/footer_tvoff.png" media="(prefers-reduced-motion: reduce)"><img src="assets/footer_tvoff.gif" width="480" height="240" alt="A pixel TV screen that reads: end of transmission"></picture>
+  <div class="end-text">
+    <p class="links"><a href="https://apps.apple.com/developer/mike-mailyan/id1547807750">All apps on the App Store</a><a href="https://github.com/OutOfOdds">GitHub</a></p>
+    <p>© 2026 Mike Mailyan · oddly working</p>
     <details>
       <summary>▓▓▓</summary>
-      <p data-en>you opened it anyway.</p><p data-ru>ты всё-таки открыл.</p>
+      <p>You opened it anyway.</p>
     </details>
-    <span><span data-en>// you were never here.</span><span data-ru>// тебя здесь не было.</span></span>
-  </footer>
-</div>
+    <p class="ghost">// you were never here.</p>
+  </div>
+</footer>
+
 <script>
 (function () {
-  var root = document.documentElement, buttons = document.querySelectorAll('[data-set]');
-  var lines = {
-    en: ['> odds', '> signal source: unknown', '> connection established...', "> you weren't supposed to find this."],
-    ru: ['> odds', '> источник сигнала: неизвестен', '> соединение установлено...', '> ты не должен был это найти.']
-  };
-  var lang = 'en', typed = document.getElementById('typed'), timer = null;
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  function run() {
-    clearTimeout(timer);
-    if (still) { typed.textContent = lines[lang][0]; return; }
-    var i = 0, n = 0, del = false;
-    (function tick() {
-      var s = lines[lang][i];
-      typed.textContent = s.slice(0, n);
-      if (!del && n < s.length) { n++; timer = setTimeout(tick, 70 + Math.random() * 60); }
-      else if (!del) { del = true; timer = setTimeout(tick, 2200); }
-      else if (n > 0) { n--; timer = setTimeout(tick, 28); }
-      else { del = false; i = (i + 1) % lines[lang].length; timer = setTimeout(tick, 500); }
-    })();
-  }
-  function set(l) {
-    lang = l; root.lang = l;
-    buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === l); });
-    try { localStorage.setItem('lang', l); } catch (e) {}
-    run();
-  }
-  var saved = null;
-  try { saved = localStorage.getItem('lang'); } catch (e) {}
-  set(saved || ((navigator.language || '').slice(0, 2) === 'ru' ? 'ru' : 'en'));
-  buttons.forEach(function (b) { b.addEventListener('click', function () { set(b.dataset.set); }); });
+  var lines = ['signal source: unknown', 'connection established...', "you weren't supposed to find this.", 'still compiling.'];
+  var el = document.getElementById('typed');
+  if (!el || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+  var i = 0, n = 0, del = false;
+  (function tick() {
+    var s = lines[i];
+    el.textContent = s.slice(0, n);
+    if (!del && n < s.length) { n++; setTimeout(tick, 60 + Math.random() * 60); }
+    else if (!del) { del = true; setTimeout(tick, 2400); }
+    else if (n > 0) { n--; setTimeout(tick, 24); }
+    else { del = false; i = (i + 1) % lines.length; setTimeout(tick, 500); }
+  })();
 })();
 </script>
 </body>

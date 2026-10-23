@@ -1,0 +1,41 @@
+1:"$Sreact.fragment"
+2:I[22016,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],""]
+3:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+9:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+7:X
+1d:X
+1d:C
+0:{"buildId":"iBh41rqML1bk3rgk9NZna","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"wiki_article-module__Zj8A-W__layout","children":[["$","article",null,{"className":"article-module__ZSW_Uq__article wiki_article-module__Zj8A-W__article","children":[["$","p",null,{"className":"wiki_article-module__Zj8A-W__section","children":"Stock"}],["$","h1",null,{"children":"Stock and refills"}],[["$","p",null,{"children":"Stock is optional and set per medicine. With it, every dose marked as taken comes off the count."}],"\n",["$","h2",null,{"id":"set-up-stock","children":["$","a",null,{"href":"#set-up-stock","children":"Set up stock"}]}],"\n",["$","p",null,{"children":["In the medicine's card, tap ",["$","strong",null,{"children":"Set up stock"}],":"]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Quantity now"}],": how many tablets, capsules, ml, drops or doses are left."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Quantity per intake"}],": how much one dose uses. If the dosage is already in tablets, capsules, ml or drops, it's filled in."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Remind when left"}],": the count that triggers a reminder. 7 by default."]}],"\n"]}],"\n",["$","p",null,{"children":["The cabinet shows a bar for each medicine and how long it lasts at its schedule, for example «Lasts until November 7». In the last days it says ",["$","strong",null,{"children":"Time to refill"}],"."]}],"\n",["$","h2",null,{"id":"refill-and-recount","children":["$","a",null,{"href":"#refill-and-recount","children":"Refill and recount"}]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Refill"}]," adds what you bought. It offers amounts for 30, 60 or 90 days at your schedule."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Recount stock"}]," replaces the count with what you actually have, for example after a dose was given but not marked."]}],"\n"]}],"\n",["$","h2",null,{"id":"low-stock-reminder","children":["$","a",null,{"href":"#low-stock-reminder","children":"Low stock reminder"}]}],"\n",["$","p",null,{"children":["When a medicine reaches its threshold, Capsula sends one notification. To stop counting, choose ",["$","strong",null,{"children":"Stop tracking stock"}]," in the medicine's ",["$","strong",null,{"children":"•••"}]," menu."]}]],["$","nav",null,{"className":"wiki_article-module__Zj8A-W__pager","aria-label":"Previous and next pages","children":[["$","$L2",null,{"href":"/wiki/journal/doctor-report","className":"wiki_article-module__Zj8A-W__pagerLink","children":[["$","span",null,{"children":"Previous"}],"Report for the doctor"]}],["$","$L2",null,{"href":"/wiki/family/family","className":"wiki_article-module__Zj8A-W__pagerLink wiki_article-module__Zj8A-W__pagerNext","children":[["$","span",null,{"children":"Next"}],"Family and emergency card"]}]]}]]}],["$","aside",null,{"className":"wiki_article-module__Zj8A-W__toc","children":["$","nav",null,{"className":"wiki_toc-module__qAWKMW__toc","aria-label":"On this page","children":[["$","p",null,{"className":"wiki_toc-module__qAWKMW__title","children":"On this page"}],["$","ul",null,{"role":"list","children":[["$","li","set-up-stock",{"className":"","children":["$","a",null,{"href":"#set-up-stock","children":"Set up stock"}]}],["$","li","refill-and-recount",{"className":"","children":["$","a",null,{"href":"#refill-and-recount","children":"Refill and recount"}]}],["$","li","low-stock-reminder",{"className":"","children":["$","a",null,{"href":"#low-stock-reminder","children":"Low stock reminder"}]}]]}]]}]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Stock and refills — Capsula"}],["$","meta","1",{"name":"description","content":"Reminders for every dose, a journal of what's taken, stock that counts itself and medicines for the whole family. No account."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18"]}]}]}],"$L19"]}],"isPartial":"$@1a","staleTime":"$7","varyParams":null},{"rsc":"$L1b","isPartial":"$@1c","staleTime":"$7","varyParams":"$1d"},{"rsc":"$L1e","isPartial":"$@1f","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@20","rootVaryParams":null,"needsRuntimeRequest":"$@21"}
+22:I[39756,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+23:I[37457,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+24:I[38483,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],"WikiSidebar"]
+25:I[21620,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],"WikiSearch"]
+5:null
+a:["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/Capsula-Site/"}]
+b:["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/Capsula-Site/ru/"}]
+c:["$","meta","5",{"property":"og:title","content":"Capsula: Medicine Reminders and Dose Journal"}]
+d:["$","meta","6",{"property":"og:description","content":"Medicines on time. Reminders, a dose journal and stock for you and your family."}]
+e:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/Capsula-Site/"}]
+f:["$","meta","8",{"property":"og:locale","content":"en_US"}]
+10:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+11:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+12:["$","meta","11",{"property":"og:image:height","content":"720"}]
+13:["$","meta","12",{"property":"og:image:alt","content":"Capsula app icon and the tagline Medicines on time"}]
+14:["$","meta","13",{"property":"og:type","content":"website"}]
+15:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+16:["$","meta","15",{"name":"twitter:title","content":"Capsula: Medicine Reminders and Dose Journal"}]
+17:["$","meta","16",{"name":"twitter:description","content":"Medicines on time. Reminders, a dose journal and stock for you and your family."}]
+18:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+19:["$","meta",null,{"name":"next-size-adjust","content":""}]
+1b:["$","$1","c",{"children":[null,["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]]}]
+1e:["$","$1","c",{"children":[[["$","script","script-0",{"src":"/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js","async":true}]],["$","div",null,{"className":"wiki_layout-module__jjRz8a__wiki","children":[["$","$L24",null,{"locale":"en","search":["$","$L25",null,{"indexHref":"/wiki/search-index.json","labels":{"placeholder":"Search help","loading":"Loading","nothingFound":"Nothing found for “{query}”."}}]}],["$","div",null,{"className":"wiki_layout-module__jjRz8a__page","children":["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]}]]}]]}]
+21:true
+7:300
+7:C
+20:0
+1a:"$undefined"
+1c:"$undefined"
+1f:"$undefined"
+6:"$undefined"

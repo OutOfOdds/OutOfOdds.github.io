@@ -1,0 +1,7 @@
+:HL["/Capsula-Site/_next/static/chunks/1y_ccj96l7gc9.css","style"]
+:HL["/Capsula-Site/_next/static/chunks/3ho6ags-fqbsy.css","style"]
+:HL["/Capsula-Site/_next/static/chunks/2ximqaioudqhm.css","style"]
+:HL["/Capsula-Site/_next/static/media/406d3fc8d5ec9f59-s.p.0mnr43et3sf34.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Capsula-Site/_next/static/media/a85fe84266768609-s.p.0h6ig86gwutp4.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@30,600,0..1,0&icon_names=account_balance_wallet,bar_chart,calendar_month,check_circle,dark_mode,emoji_events,flight,ios_share,light_mode,lock,mail,medication,mic,open_in_full,open_in_new,pause,phone_iphone,play_arrow,send,spa,star,target,timer,widgets","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"(main)","param":null,"prefetchHints":4144,"slots":{"children":{"name":"wiki","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"c","key":"journal/journal","siblings":["search-index.json"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}}}},"staleTime":300,"buildId":"iBh41rqML1bk3rgk9NZna"}

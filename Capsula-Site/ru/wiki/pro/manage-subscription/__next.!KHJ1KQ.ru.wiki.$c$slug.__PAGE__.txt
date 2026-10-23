@@ -1,0 +1,39 @@
+1:"$Sreact.fragment"
+2:I[22016,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],""]
+3:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+9:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+7:X
+19:X
+19:C
+0:{"buildId":"iBh41rqML1bk3rgk9NZna","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"wiki_article-module__Zj8A-W__layout","children":[["$","article",null,{"className":"article-module__ZSW_Uq__article wiki_article-module__Zj8A-W__article","children":[["$","p",null,{"className":"wiki_article-module__Zj8A-W__section","children":"Pro и покупки"}],["$","h1",null,{"children":"Подписка и восстановление покупок"}],[["$","h2",null,{"id":"управлять-или-отменить","children":["$","a",null,{"href":"#управлять-или-отменить","children":"Управлять или отменить"}]}],"\n",["$","p",null,{"children":["Настройки → ",["$","strong",null,{"children":"Capsula Pro"}]," → ",["$","strong",null,{"children":"Управлять подпиской"}]," или приложение «Настройки» → ваше имя → «Подписки». Отменить нужно не позже чем за сутки до продления."]}],"\n",["$","h2",null,{"id":"восстановить-покупку","children":["$","a",null,{"href":"#восстановить-покупку","children":"Восстановить покупку"}]}],"\n",["$","p",null,{"children":["Настройки → ",["$","strong",null,{"children":"О приложении"}]," → ",["$","strong",null,{"children":"Восстановить покупки"}],". Pro вернётся на новом iPhone с тем же Apple ID."]}],"\n",["$","h2",null,{"id":"проблемы-с-оплатой","children":["$","a",null,{"href":"#проблемы-с-оплатой","children":"Проблемы с оплатой"}]}],"\n",["$","p",null,{"children":"Если App Store не смог списать оплату за Pro, Capsula скажет об этом в настройках. Обновите способ оплаты, и Pro вернётся сам.\nПокупка, которая ждёт одобрения организатора семейного доступа, откроет Pro, как только её одобрят."}],"\n",["$","h2",null,{"id":"возврат-денег","children":["$","a",null,{"href":"#возврат-денег","children":"Возврат денег"}]}],"\n",["$","p",null,{"children":["Возвратами занимается Apple: ",["$","a",null,{"href":"https://reportaproblem.apple.com","children":"reportaproblem.apple.com"}],"."]}]],["$","nav",null,{"className":"wiki_article-module__Zj8A-W__pager","aria-label":"Предыдущая и следующая страницы","children":[["$","$L2",null,{"href":"/ru/wiki/pro/free-and-pro","className":"wiki_article-module__Zj8A-W__pagerLink","children":[["$","span",null,{"children":"Назад"}],"Free и Pro"]}],["$","$L2",null,{"href":"/ru/wiki/help/faq","className":"wiki_article-module__Zj8A-W__pagerLink wiki_article-module__Zj8A-W__pagerNext","children":[["$","span",null,{"children":"Дальше"}],"Частые вопросы"]}]]}]]}],["$","aside",null,{"className":"wiki_article-module__Zj8A-W__toc","children":["$","nav",null,{"className":"wiki_toc-module__qAWKMW__toc","aria-label":"На этой странице","children":[["$","p",null,{"className":"wiki_toc-module__qAWKMW__title","children":"На этой странице"}],["$","ul",null,{"role":"list","children":[["$","li","управлять-или-отменить",{"className":"","children":["$","a",null,{"href":"#управлять-или-отменить","children":"Управлять или отменить"}]}],["$","li","восстановить-покупку",{"className":"","children":["$","a",null,{"href":"#восстановить-покупку","children":"Восстановить покупку"}]}],["$","li","проблемы-с-оплатой",{"className":"","children":["$","a",null,{"href":"#проблемы-с-оплатой","children":"Проблемы с оплатой"}]}],["$","li","возврат-денег",{"className":"","children":["$","a",null,{"href":"#возврат-денег","children":"Возврат денег"}]}]]}]]}]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Подписка и восстановление покупок — Capsula"}],["$","meta","1",{"name":"description","content":"Напоминания о каждом приёме, журнал того, что принято, запас, который считается сам, и лекарства всей семьи. Без аккаунта."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/Capsula-Site/"}],["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/Capsula-Site/ru/"}],["$","meta","5",{"property":"og:title","content":"Capsula: напоминания о лекарствах и журнал приёмов"}],["$","meta","6",{"property":"og:description","content":"Лекарства вовремя. Напоминания, журнал приёмов и запас для вас и ваших близких."}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14"]}]}]}],"$L15"]}],"isPartial":"$@16","staleTime":"$7","varyParams":null},{"rsc":"$L17","isPartial":"$@18","staleTime":"$7","varyParams":"$19"},{"rsc":"$L1a","isPartial":"$@1b","staleTime":"$7","varyParams":null},{"rsc":"$L1c","isPartial":"$@1d","staleTime":"$7","varyParams":"$19"}],"isUpgradeableISRFallback":false,"a":"$@1e","rootVaryParams":null,"needsRuntimeRequest":"$@1f"}
+20:I[39756,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+21:I[37457,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+22:I[38483,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],"WikiSidebar"]
+23:I[21620,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],"WikiSearch"]
+5:null
+a:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/Capsula-Site/ru/"}]
+b:["$","meta","8",{"property":"og:locale","content":"ru_RU"}]
+c:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+d:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+e:["$","meta","11",{"property":"og:image:height","content":"720"}]
+f:["$","meta","12",{"property":"og:image:alt","content":"Иконка Capsula и подпись Medicines on time"}]
+10:["$","meta","13",{"property":"og:type","content":"website"}]
+11:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+12:["$","meta","15",{"name":"twitter:title","content":"Capsula: напоминания о лекарствах и журнал приёмов"}]
+13:["$","meta","16",{"name":"twitter:description","content":"Лекарства вовремя. Напоминания, журнал приёмов и запас для вас и ваших близких."}]
+14:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+15:["$","meta",null,{"name":"next-size-adjust","content":""}]
+17:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+1a:["$","$1","c",{"children":[[["$","script","script-0",{"src":"/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js","async":true}]],["$","div",null,{"className":"wiki_layout-module__jjRz8a__wiki","children":[["$","$L22",null,{"locale":"ru","search":["$","$L23",null,{"indexHref":"/ru/wiki/search-index.json","labels":{"placeholder":"Поиск по справке","loading":"Загрузка","nothingFound":"По запросу «{query}» ничего нет."}}]}],["$","div",null,{"className":"wiki_layout-module__jjRz8a__page","children":["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]}]]}]]}]
+1c:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+1f:true
+7:300
+7:C
+1e:0
+16:"$undefined"
+18:"$undefined"
+1b:"$undefined"
+1d:"$undefined"
+6:"$undefined"

@@ -1,0 +1,39 @@
+1:"$Sreact.fragment"
+2:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+7:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+8:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+6:X
+1f:X
+1f:C
+0:{"buildId":"iBh41rqML1bk3rgk9NZna","data":[{"rsc":["$","$1","c",{"children":[[["$","h2",null,{"children":"Политика конфиденциальности"}],"\n",["$","p",null,{"children":["$","em",null,{"children":"Обновлено: 20 октября 2026 г."}]}],"\n",["$","p",null,{"children":"Capsula — напоминания о лекарствах и журнал приёмов для iPhone от независимого разработчика. Здесь описано, что происходит с вашими данными, когда вы пользуетесь приложением."}],"\n",["$","h3",null,{"children":"Коротко"}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"В Capsula нет аккаунтов, рекламы, слежки и собственного сервера."}],"\n",["$","li",null,{"children":"Лекарства, расписания, история приёмов, близкие и экстренные карточки хранятся на вашем iPhone."}],"\n",["$","li",null,{"children":"Они покидают iPhone, только если вы включите iCloud или сами чем-то поделитесь."}],"\n"]}],"\n",["$","h3",null,{"children":"Данные на вашем iPhone"}],"\n",["$","p",null,{"children":"Всё, что вы вводите (лекарства, расписания, приёмы, заметки о самочувствии, причины пропусков, запас, близкие и экстренные карточки), хранится на устройстве. Эти данные попадают в резервные копии iPhone (iCloud или компьютер) на условиях Apple. Виджеты и Live Activity читают копию ближайших приёмов на том же iPhone."}],"\n",["$","h3",null,{"children":"iCloud"}],"\n",["$","p",null,{"children":"Если включить iCloud в настройках Capsula, данные синхронизируются через вашу личную базу iCloud, которой управляет Apple, и другие ваши устройства будут в курсе. Доступ к ней есть только у вас, разработчик прочитать её не может. iCloud можно выключить в настройках Capsula в любой момент."}],"\n",["$","h3",null,{"children":"Сведения о здоровье"}],"\n",["$","p",null,{"children":"По лекарствам и истории приёмов можно судить о здоровье. Capsula никогда не отправляет их разработчику или третьим лицам и не использует для рекламы или аналитики."}],"\n",["$","h3",null,{"children":"Уведомления"}],"\n",["$","p",null,{"children":"Напоминания планируются на вашем iPhone. В них есть название и дозировка лекарства, которые могут быть видны на экране блокировки в зависимости от настроек уведомлений iOS."}],"\n",["$","h3",null,{"children":"Покупки"}],"\n",["$","p",null,{"children":"Подписки и покупки обрабатывает Apple. Capsula получает от App Store только статус покупки и никогда не видит платёжные данные."}],"\n",["$","h3",null,{"children":"Отправка"}],"\n",["$","p",null,{"children":"Когда вы отправляете отчёт для врача, экстренную карточку или напоминание близкому, файл или сообщение уходит туда, куда вы решите."}],"\n",["$","h3",null,{"children":"Дети"}],"\n",["$","p",null,{"children":"В Capsula родитель может вести лекарства ребёнка. Самостоятельное использование детьми не предполагается."}],"\n",["$","h3",null,{"children":"Удаление данных"}],"\n",["$","p",null,{"children":"Удалите лекарство вместе с историей в приложении или удалите приложение, чтобы стереть всё на этом iPhone. Если был включён iCloud, удалите данные Capsula в «Настройках» → ваше имя → iCloud."}],"\n",["$","h3",null,{"children":"Изменения"}],"\n",["$","p",null,{"children":"Если политика изменится, новая версия появится на этой странице с новой датой."}],"\n",["$","h3",null,{"children":"Связь"}],"\n",["$","p",null,{"children":["Вопросы о конфиденциальности: ",["$","a",null,{"href":"mailto:mihomailian@gmail.com","children":"mihomailian@gmail.com"}],"."]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Capsula: напоминания о лекарствах и журнал приёмов"}],["$","meta","1",{"name":"description","content":"Напоминания о каждом приёме, журнал того, что принято, запас, который считается сам, и лекарства всей семьи. Без аккаунта."}],"$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18"]}]}]}],"$L19"]}],"isPartial":"$@1a","staleTime":"$6","varyParams":null},{"rsc":"$L1b","isPartial":"$@1c","staleTime":"$6","varyParams":null},{"rsc":"$L1d","isPartial":"$@1e","staleTime":"$6","varyParams":"$1f"}],"isUpgradeableISRFallback":false,"a":"$@20","rootVaryParams":null,"needsRuntimeRequest":"$@21"}
+22:I[39756,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+23:I[37457,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+4:null
+9:["$","meta","2",{"name":"robots","content":"noindex, nofollow"}]
+a:["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/Capsula-Site/"}]
+b:["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/Capsula-Site/ru/"}]
+c:["$","meta","5",{"property":"og:title","content":"Capsula: напоминания о лекарствах и журнал приёмов"}]
+d:["$","meta","6",{"property":"og:description","content":"Лекарства вовремя. Напоминания, журнал приёмов и запас для вас и ваших близких."}]
+e:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/Capsula-Site/ru/"}]
+f:["$","meta","8",{"property":"og:locale","content":"ru_RU"}]
+10:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+11:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+12:["$","meta","11",{"property":"og:image:height","content":"720"}]
+13:["$","meta","12",{"property":"og:image:alt","content":"Иконка Capsula и подпись Medicines on time"}]
+14:["$","meta","13",{"property":"og:type","content":"website"}]
+15:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+16:["$","meta","15",{"name":"twitter:title","content":"Capsula: напоминания о лекарствах и журнал приёмов"}]
+17:["$","meta","16",{"name":"twitter:description","content":"Лекарства вовремя. Напоминания, журнал приёмов и запас для вас и ваших близких."}]
+18:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+19:["$","meta",null,{"name":"next-size-adjust","content":""}]
+1b:["$","$1","c",{"children":[null,["$","article",null,{"className":"article-module__ZSW_Uq__article ","children":["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]}]]}]
+1d:["$","$1","c",{"children":[null,["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]]}]
+21:true
+6:300
+6:C
+20:0
+1a:"$undefined"
+1c:"$undefined"
+1e:"$undefined"
+5:"$undefined"

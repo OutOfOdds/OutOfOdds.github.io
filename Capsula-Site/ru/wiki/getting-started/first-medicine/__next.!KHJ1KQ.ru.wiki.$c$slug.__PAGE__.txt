@@ -1,0 +1,44 @@
+1:"$Sreact.fragment"
+2:I[22016,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],""]
+3:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+9:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+7:X
+1e:X
+1e:C
+0:{"buildId":"iBh41rqML1bk3rgk9NZna","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"wiki_article-module__Zj8A-W__layout","children":[["$","article",null,{"className":"article-module__ZSW_Uq__article wiki_article-module__Zj8A-W__article","children":[["$","p",null,{"className":"wiki_article-module__Zj8A-W__section","children":"Начало работы"}],["$","h1",null,{"children":"Первое лекарство"}],[["$","p",null,{"children":"При первом запуске Capsula за четыре коротких шага настраивает одно лекарство. Всё потом можно поменять в карточке лекарства."}],"\n",["$","h2",null,{"id":"что-принимаете","children":["$","a",null,{"href":"#что-принимаете","children":"Что принимаете?"}]}],"\n",["$","p",null,{"children":"Название и дозировка: выберите форму (таблетка, капсула, мл, капли и другие) и количество. Для начала хватит одного лекарства, остальные можно добавить позже."}],"\n",["$","h2",null,{"id":"когда-принимать","children":["$","a",null,{"href":"#когда-принимать","children":"Когда принимать?"}]}],"\n",["$","p",null,{"children":"Выберите время или привяжите приём к привычке, например «после завтрака» или «перед сном»: так его легче не забыть.\nПервое лекарство принимается каждый день, начиная с сегодняшнего. Дни недели, курс и запас настраиваются в карточке лекарства."}],"\n",["$","h2",null,{"id":"если-не-отмечу","children":["$","a",null,{"href":"#если-не-отмечу","children":"Если не отмечу?"}]}],"\n",["$","p",null,{"children":"Чаще всего пропускают то напоминание, которое смахнули. Выберите, что делать:"}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Напомнить один раз"}],": одно уведомление в срок."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Повторять, пока не отмечу"}],": каждые 15 минут, ещё до трёх раз."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Звонить как будильник"}],": даже в беззвучном режиме и фокусе."]}],"\n"]}],"\n",["$","h2",null,{"id":"разрешите-напоминания","children":["$","a",null,{"href":"#разрешите-напоминания","children":"Разрешите напоминания"}]}],"\n",["$","p",null,{"children":"Capsula покажет, как выглядит напоминание, и попросит разрешение на уведомления. Отметить приём можно прямо из уведомления, даже на заблокированном экране."}]],["$","nav",null,{"className":"wiki_article-module__Zj8A-W__pager","aria-label":"Предыдущая и следующая страницы","children":[["$","$L2",null,{"href":"/ru/wiki/getting-started/install","className":"wiki_article-module__Zj8A-W__pagerLink","children":[["$","span",null,{"children":"Назад"}],"Установка"]}],["$","$L2",null,{"href":"/ru/wiki/medicines/add-a-medicine","className":"wiki_article-module__Zj8A-W__pagerLink wiki_article-module__Zj8A-W__pagerNext","children":[["$","span",null,{"children":"Дальше"}],"Добавить лекарство"]}]]}]]}],["$","aside",null,{"className":"wiki_article-module__Zj8A-W__toc","children":["$","nav",null,{"className":"wiki_toc-module__qAWKMW__toc","aria-label":"На этой странице","children":[["$","p",null,{"className":"wiki_toc-module__qAWKMW__title","children":"На этой странице"}],["$","ul",null,{"role":"list","children":[["$","li","что-принимаете",{"className":"","children":["$","a",null,{"href":"#что-принимаете","children":"Что принимаете?"}]}],["$","li","когда-принимать",{"className":"","children":["$","a",null,{"href":"#когда-принимать","children":"Когда принимать?"}]}],["$","li","если-не-отмечу",{"className":"","children":["$","a",null,{"href":"#если-не-отмечу","children":"Если не отмечу?"}]}],["$","li","разрешите-напоминания",{"className":"","children":["$","a",null,{"href":"#разрешите-напоминания","children":"Разрешите напоминания"}]}]]}]]}]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Первое лекарство — Capsula"}],["$","meta","1",{"name":"description","content":"Напоминания о каждом приёме, журнал того, что принято, запас, который считается сам, и лекарства всей семьи. Без аккаунта."}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19"]}]}]}],"$L1a"]}],"isPartial":"$@1b","staleTime":"$7","varyParams":null},{"rsc":"$L1c","isPartial":"$@1d","staleTime":"$7","varyParams":"$1e"},{"rsc":"$L1f","isPartial":"$@20","staleTime":"$7","varyParams":null},{"rsc":"$L21","isPartial":"$@22","staleTime":"$7","varyParams":"$1e"}],"isUpgradeableISRFallback":false,"a":"$@23","rootVaryParams":null,"needsRuntimeRequest":"$@24"}
+25:I[39756,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+26:I[37457,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+27:I[38483,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],"WikiSidebar"]
+28:I[21620,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],"WikiSearch"]
+5:null
+a:["$","meta","2",{"name":"robots","content":"noindex, nofollow"}]
+b:["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/Capsula-Site/"}]
+c:["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/Capsula-Site/ru/"}]
+d:["$","meta","5",{"property":"og:title","content":"Capsula: напоминания о лекарствах и журнал приёмов"}]
+e:["$","meta","6",{"property":"og:description","content":"Лекарства вовремя. Напоминания, журнал приёмов и запас для вас и ваших близких."}]
+f:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/Capsula-Site/ru/"}]
+10:["$","meta","8",{"property":"og:locale","content":"ru_RU"}]
+11:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+12:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+13:["$","meta","11",{"property":"og:image:height","content":"720"}]
+14:["$","meta","12",{"property":"og:image:alt","content":"Иконка Capsula и подпись Medicines on time"}]
+15:["$","meta","13",{"property":"og:type","content":"website"}]
+16:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+17:["$","meta","15",{"name":"twitter:title","content":"Capsula: напоминания о лекарствах и журнал приёмов"}]
+18:["$","meta","16",{"name":"twitter:description","content":"Лекарства вовремя. Напоминания, журнал приёмов и запас для вас и ваших близких."}]
+19:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+1a:["$","meta",null,{"name":"next-size-adjust","content":""}]
+1c:["$","$1","c",{"children":[null,["$","$L25",null,{"parallelRouterKey":"children","template":["$","$L26",null,{}]}]]}]
+1f:["$","$1","c",{"children":[[["$","script","script-0",{"src":"/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js","async":true}]],["$","div",null,{"className":"wiki_layout-module__jjRz8a__wiki","children":[["$","$L27",null,{"locale":"ru","search":["$","$L28",null,{"indexHref":"/ru/wiki/search-index.json","labels":{"placeholder":"Поиск по справке","loading":"Загрузка","nothingFound":"По запросу «{query}» ничего нет."}}]}],["$","div",null,{"className":"wiki_layout-module__jjRz8a__page","children":["$","$L25",null,{"parallelRouterKey":"children","template":["$","$L26",null,{}]}]}]]}]]}]
+21:["$","$1","c",{"children":[null,["$","$L25",null,{"parallelRouterKey":"children","template":["$","$L26",null,{}]}]]}]
+24:true
+7:300
+7:C
+23:0
+1b:"$undefined"
+1d:"$undefined"
+20:"$undefined"
+22:"$undefined"
+6:"$undefined"

@@ -1,0 +1,35 @@
+1:"$Sreact.fragment"
+2:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+7:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+8:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+6:X
+0:{"buildId":"iBh41rqML1bk3rgk9NZna","data":[{"rsc":["$","$1","c",{"children":[[["$","h2",null,{"children":"Privacy Policy"}],"\n",["$","p",null,{"children":["$","em",null,{"children":"Last updated: October 20, 2026"}]}],"\n",["$","p",null,{"children":"Capsula is a medicine reminder and dose journal for iPhone made by an independent developer. This policy explains what happens to your data when you use the app."}],"\n",["$","h3",null,{"children":"The short version"}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"Capsula has no accounts, no ads and no tracking, and no server of its own."}],"\n",["$","li",null,{"children":"Your medicines, schedules, dose history, family members and emergency cards are stored on your iPhone."}],"\n",["$","li",null,{"children":"They leave your iPhone only if you turn on iCloud or share something yourself."}],"\n"]}],"\n",["$","h3",null,{"children":"Data stored on your iPhone"}],"\n",["$","p",null,{"children":"Everything you enter (medicines, schedules, doses, notes on how you felt, skip reasons, stock, family members and emergency cards) is stored locally on your device. It is included in your iPhone's own backups (iCloud Backup or a computer backup) under Apple's terms. Widgets and Live Activities read a copy of the nearest doses on the same iPhone."}],"\n",["$","h3",null,{"children":"iCloud"}],"\n",["$","p",null,{"children":"If you turn on iCloud in Capsula's settings, your data is synced through your private iCloud database run by Apple, so your other devices stay up to date. Only you can access it; the developer cannot read it. Turn iCloud off in Capsula's settings at any time."}],"\n",["$","h3",null,{"children":"Health information"}],"\n",["$","p",null,{"children":"Medicines and dose history can reveal things about your health. Capsula never sends them to the developer or to third parties, and does not use them for advertising or analytics."}],"\n",["$","h3",null,{"children":"Notifications"}],"\n",["$","p",null,{"children":"Reminders are scheduled on your iPhone. They include the medicine name and dosage, which can be visible on the Lock Screen depending on your iOS notification settings."}],"\n",["$","h3",null,{"children":"Purchases"}],"\n",["$","p",null,{"children":"Subscriptions and purchases are processed by Apple. Capsula receives only the status of your purchase from the App Store, never your payment details."}],"\n",["$","h3",null,{"children":"Sharing"}],"\n",["$","p",null,{"children":"When you send a report for the doctor, an emergency card or a reminder to someone, the file or message goes wherever you choose to send it."}],"\n",["$","h3",null,{"children":"Children"}],"\n",["$","p",null,{"children":"Capsula can hold a child's medicines added by a parent. The app is not directed at children for their own use."}],"\n",["$","h3",null,{"children":"Deleting your data"}],"\n",["$","p",null,{"children":"Delete a medicine and its history in the app, or delete the app to remove everything on this iPhone. If iCloud was on, remove Capsula's data in the Settings app → your name → iCloud."}],"\n",["$","h3",null,{"children":"Changes"}],"\n",["$","p",null,{"children":"If this policy changes, the new version will be posted on this page with a new date."}],"\n",["$","h3",null,{"children":"Contact"}],"\n",["$","p",null,{"children":["Questions about privacy: ",["$","a",null,{"href":"mailto:mihomailian@gmail.com","children":"mihomailian@gmail.com"}],"."]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Capsula: Medicine Reminders and Dose Journal"}],["$","meta","1",{"name":"description","content":"Reminders for every dose, a journal of what's taken, stock that counts itself and medicines for the whole family. No account."}],"$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18"]}]}]}],"$L19"]}],"isPartial":"$@1a","staleTime":"$6","varyParams":null},{"rsc":"$L1b","isPartial":"$@1c","staleTime":"$6","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@1d","rootVaryParams":null,"needsRuntimeRequest":"$@1e"}
+1f:I[39756,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+20:I[37457,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+4:null
+9:["$","meta","2",{"name":"robots","content":"noindex, nofollow"}]
+a:["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/Capsula-Site/"}]
+b:["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/Capsula-Site/ru/"}]
+c:["$","meta","5",{"property":"og:title","content":"Capsula: Medicine Reminders and Dose Journal"}]
+d:["$","meta","6",{"property":"og:description","content":"Medicines on time. Reminders, a dose journal and stock for you and your family."}]
+e:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/Capsula-Site/"}]
+f:["$","meta","8",{"property":"og:locale","content":"en_US"}]
+10:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+11:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+12:["$","meta","11",{"property":"og:image:height","content":"720"}]
+13:["$","meta","12",{"property":"og:image:alt","content":"Capsula app icon and the tagline Medicines on time"}]
+14:["$","meta","13",{"property":"og:type","content":"website"}]
+15:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+16:["$","meta","15",{"name":"twitter:title","content":"Capsula: Medicine Reminders and Dose Journal"}]
+17:["$","meta","16",{"name":"twitter:description","content":"Medicines on time. Reminders, a dose journal and stock for you and your family."}]
+18:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+19:["$","meta",null,{"name":"next-size-adjust","content":""}]
+1b:["$","$1","c",{"children":[null,["$","article",null,{"className":"article-module__ZSW_Uq__article ","children":["$","$L1f",null,{"parallelRouterKey":"children","template":["$","$L20",null,{}]}]}]]}]
+1e:true
+6:300
+6:C
+1d:0
+1a:"$undefined"
+1c:"$undefined"
+5:"$undefined"

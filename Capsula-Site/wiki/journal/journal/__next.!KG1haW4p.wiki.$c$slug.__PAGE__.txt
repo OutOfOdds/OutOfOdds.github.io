@@ -1,0 +1,39 @@
+1:"$Sreact.fragment"
+2:I[22016,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],""]
+3:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+9:I[97367,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+7:X
+1b:X
+1b:C
+0:{"buildId":"iBh41rqML1bk3rgk9NZna","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"wiki_article-module__Zj8A-W__layout","children":[["$","article",null,{"className":"article-module__ZSW_Uq__article wiki_article-module__Zj8A-W__article","children":[["$","p",null,{"className":"wiki_article-module__Zj8A-W__section","children":"Journal"}],["$","h1",null,{"children":"Intake journal"}],[["$","p",null,{"children":["Open the journal with the book button at the bottom left of Today. Choose ",["$","strong",null,{"children":"7 days"}]," or ",["$","strong",null,{"children":"30 days"}],", move between periods with the arrows, and narrow everything to one medicine or one person."]}],"\n",["$","h2",null,{"id":"summary","children":["$","a",null,{"href":"#summary","children":"Summary"}]}],"\n",["$","p",null,{"children":"«42 of 50 taken», the share taken and a bar of taken, skipped and not marked, with the rest in words. While the period includes today, only doses whose time has passed are counted."}],"\n",["$","h2",null,{"id":"by-medicine","children":["$","a",null,{"href":"#by-medicine","children":"By medicine"}]}],"\n",["$","p",null,{"children":"Each medicine has a row of day cells, filled when taken, marked when skipped and empty when not marked. A day with several doses is split in time order. Under the row: when it's usually taken compared with the plan."}],"\n",["$","h2",null,{"id":"skips-and-as-needed","children":["$","a",null,{"href":"#skips-and-as-needed","children":"Skips and as needed"}]}],"\n",["$","p",null,{"children":"Skip reasons by how often they were given, then intakes of as-needed medicines and when the last one was."}],"\n",["$","h2",null,{"id":"intake-history","children":["$","a",null,{"href":"#intake-history","children":"Intake history"}]}],"\n",["$","p",null,{"children":"Every dose by day, with its planned time, status, who gave it and how you felt. A button on each row fixes the time or the mark."}],"\n",["$","p",null,{"children":"Late marks count as taken. The journal makes no claim about treatment; it only records what was marked."}]],["$","nav",null,{"className":"wiki_article-module__Zj8A-W__pager","aria-label":"Previous and next pages","children":[["$","$L2",null,{"href":"/wiki/doses/reminders","className":"wiki_article-module__Zj8A-W__pagerLink","children":[["$","span",null,{"children":"Previous"}],"Reminders"]}],["$","$L2",null,{"href":"/wiki/journal/doctor-report","className":"wiki_article-module__Zj8A-W__pagerLink wiki_article-module__Zj8A-W__pagerNext","children":[["$","span",null,{"children":"Next"}],"Report for the doctor"]}]]}]]}],["$","aside",null,{"className":"wiki_article-module__Zj8A-W__toc","children":["$","nav",null,{"className":"wiki_toc-module__qAWKMW__toc","aria-label":"On this page","children":[["$","p",null,{"className":"wiki_toc-module__qAWKMW__title","children":"On this page"}],["$","ul",null,{"role":"list","children":[["$","li","summary",{"className":"","children":["$","a",null,{"href":"#summary","children":"Summary"}]}],["$","li","by-medicine",{"className":"","children":["$","a",null,{"href":"#by-medicine","children":"By medicine"}]}],["$","li","skips-and-as-needed",{"className":"","children":["$","a",null,{"href":"#skips-and-as-needed","children":"Skips and as needed"}]}],["$","li","intake-history",{"className":"","children":["$","a",null,{"href":"#intake-history","children":"Intake history"}]}]]}]]}]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Intake journal — Capsula"}],["$","meta","1",{"name":"description","content":"Reminders for every dose, a journal of what's taken, stock that counts itself and medicines for the whole family. No account."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/Capsula-Site/"}],["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/Capsula-Site/ru/"}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16"]}]}]}],"$L17"]}],"isPartial":"$@18","staleTime":"$7","varyParams":null},{"rsc":"$L19","isPartial":"$@1a","staleTime":"$7","varyParams":"$1b"},{"rsc":"$L1c","isPartial":"$@1d","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@1e","rootVaryParams":null,"needsRuntimeRequest":"$@1f"}
+20:I[39756,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+21:I[37457,["/Capsula-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+22:I[38483,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],"WikiSidebar"]
+23:I[21620,["/Capsula-Site/_next/static/chunks/30dqu7wny8rry.js","/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js"],"WikiSearch"]
+5:null
+a:["$","meta","5",{"property":"og:title","content":"Capsula: Medicine Reminders and Dose Journal"}]
+b:["$","meta","6",{"property":"og:description","content":"Medicines on time. Reminders, a dose journal and stock for you and your family."}]
+c:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/Capsula-Site/"}]
+d:["$","meta","8",{"property":"og:locale","content":"en_US"}]
+e:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+f:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+10:["$","meta","11",{"property":"og:image:height","content":"720"}]
+11:["$","meta","12",{"property":"og:image:alt","content":"Capsula app icon and the tagline Medicines on time"}]
+12:["$","meta","13",{"property":"og:type","content":"website"}]
+13:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+14:["$","meta","15",{"name":"twitter:title","content":"Capsula: Medicine Reminders and Dose Journal"}]
+15:["$","meta","16",{"name":"twitter:description","content":"Medicines on time. Reminders, a dose journal and stock for you and your family."}]
+16:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/Capsula-Site/og-preview.png"}]
+17:["$","meta",null,{"name":"next-size-adjust","content":""}]
+19:["$","$1","c",{"children":[null,["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]]}]
+1c:["$","$1","c",{"children":[[["$","script","script-0",{"src":"/Capsula-Site/_next/static/chunks/07vn6hungs7ex.js","async":true}]],["$","div",null,{"className":"wiki_layout-module__jjRz8a__wiki","children":[["$","$L22",null,{"locale":"en","search":["$","$L23",null,{"indexHref":"/wiki/search-index.json","labels":{"placeholder":"Search help","loading":"Loading","nothingFound":"Nothing found for “{query}”."}}]}],["$","div",null,{"className":"wiki_layout-module__jjRz8a__page","children":["$","$L20",null,{"parallelRouterKey":"children","template":["$","$L21",null,{}]}]}]]}]]}]
+1f:true
+7:300
+7:C
+1e:0
+18:"$undefined"
+1a:"$undefined"
+1d:"$undefined"
+6:"$undefined"

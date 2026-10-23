@@ -1,0 +1,36 @@
+1:"$Sreact.fragment"
+2:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+7:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+8:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+6:X
+0:{"buildId":"wx0VnI_Ar655TsRgwDxvl","data":[{"rsc":["$","$1","c",{"children":[[["$","h2",null,{"children":"Privacy Policy"}],"\n",["$","p",null,{"children":["$","em",null,{"children":"Last updated: October 19, 2026"}]}],"\n",["$","p",null,{"children":"Pokerlog is a poker session tracker for iPhone made by an independent developer. This policy explains what happens to your data when you use the app."}],"\n",["$","h3",null,{"children":"The short version"}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"Pokerlog has no accounts, no ads and no tracking."}],"\n",["$","li",null,{"children":"Your sessions, hands, bankrolls and settings are stored on your iPhone."}],"\n",["$","li",null,{"children":"Data leaves your iPhone only when you use a feature that needs it, described below."}],"\n"]}],"\n",["$","h3",null,{"children":"Data stored on your iPhone"}],"\n",["$","p",null,{"children":"Everything you enter (sessions, places, tournaments, recorded hands, bankroll operations, limits and reminders) is stored locally on your device. It is included in your iPhone's own backups (iCloud Backup or a computer backup) under Apple's terms. Pokerlog does not run a server that receives this data."}],"\n",["$","h3",null,{"children":"Smart Hand (voice entry)"}],"\n",["$","p",null,{"children":["When you dictate a hand with Smart Hand and tap Send, the audio recording is sent to OpenAI to be transcribed and turned into a structured hand. Nothing is sent before you tap Send. The recording is not linked to your identity. OpenAI processes it under its ",["$","a",null,{"href":"https://openai.com/policies/api-data-usage-policies","children":"API data usage policies"}],"."]}],"\n",["$","h3",null,{"children":"Suggest an Idea"}],"\n",["$","p",null,{"children":"If you suggest a feature or vote for one, the idea's text and your vote are stored in a public iCloud database run by Apple. You are identified only by an anonymous identifier that iCloud creates for this app; Pokerlog never sees your name or Apple ID."}],"\n",["$","h3",null,{"children":"Purchases"}],"\n",["$","p",null,{"children":"Subscriptions and purchases are processed by Apple. Pokerlog receives only the status of your purchase from the App Store, never your payment details."}],"\n",["$","h3",null,{"children":"Notifications"}],"\n",["$","p",null,{"children":"Reminders and responsible play notifications are scheduled on your iPhone. No notification content is sent to a server."}],"\n",["$","h3",null,{"children":"Export and sharing"}],"\n",["$","p",null,{"children":"When you export sessions to CSV or share a hand, the file goes wherever you choose to send it."}],"\n",["$","h3",null,{"children":"Children"}],"\n",["$","p",null,{"children":"Pokerlog is not directed at children and is intended for adults who play poker where it is legal."}],"\n",["$","h3",null,{"children":"Deleting your data"}],"\n",["$","p",null,{"children":"Delete sessions and hands in the app, use Settings → Erase All Data, or delete the app. To remove an idea you suggested, delete it from its page in Suggest an Idea."}],"\n",["$","h3",null,{"children":"Changes"}],"\n",["$","p",null,{"children":"If this policy changes, the new version will be posted on this page with a new date."}],"\n",["$","h3",null,{"children":"Contact"}],"\n",["$","p",null,{"children":["Questions about privacy: ",["$","a",null,{"href":"mailto:mihomailian@gmail.com","children":"mihomailian@gmail.com"}],"."]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Pokerlog: Poker Session Tracker for iPhone"}],["$","meta","1",{"name":"description","content":"Log cash games and tournaments, run a live session on your Lock Screen, record hands and see where you really win."}],"$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18"]}]}]}],"$L19"]}],"isPartial":"$@1a","staleTime":"$6","varyParams":null},{"rsc":"$L1b","isPartial":"$@1c","staleTime":"$6","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@1d","rootVaryParams":null,"needsRuntimeRequest":"$@1e"}
+1f:I[39756,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+20:I[37457,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+:HL["/PokerLog-Site/_next/static/chunks/1jreiykd0l9il.css","style"]
+4:null
+9:["$","meta","2",{"name":"robots","content":"noindex, nofollow"}]
+a:["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/PokerLog-Site/"}]
+b:["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/PokerLog-Site/ru/"}]
+c:["$","meta","5",{"property":"og:title","content":"Pokerlog: Poker Session Tracker for iPhone"}]
+d:["$","meta","6",{"property":"og:description","content":"Every session, counted. Cash games, tournaments, hands and your bankroll in one place."}]
+e:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/PokerLog-Site/"}]
+f:["$","meta","8",{"property":"og:locale","content":"en_US"}]
+10:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/PokerLog-Site/og-preview.png"}]
+11:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+12:["$","meta","11",{"property":"og:image:height","content":"720"}]
+13:["$","meta","12",{"property":"og:image:alt","content":"Pokerlog app icon and the tagline Every session, counted"}]
+14:["$","meta","13",{"property":"og:type","content":"website"}]
+15:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+16:["$","meta","15",{"name":"twitter:title","content":"Pokerlog: Poker Session Tracker for iPhone"}]
+17:["$","meta","16",{"name":"twitter:description","content":"Every session, counted. Cash games, tournaments, hands and your bankroll in one place."}]
+18:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/PokerLog-Site/og-preview.png"}]
+19:["$","meta",null,{"name":"next-size-adjust","content":""}]
+1b:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/PokerLog-Site/_next/static/chunks/1jreiykd0l9il.css","precedence":"next"}]],["$","article",null,{"className":"article-module__ZSW_Uq__article ","children":["$","$L1f",null,{"parallelRouterKey":"children","template":["$","$L20",null,{}]}]}]]}]
+1e:true
+6:300
+6:C
+1d:0
+1a:"$undefined"
+1c:"$undefined"
+5:"$undefined"

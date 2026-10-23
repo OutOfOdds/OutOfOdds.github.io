@@ -1,0 +1,41 @@
+1:"$Sreact.fragment"
+2:I[95527,["/PokerLog-Site/_next/static/chunks/14syd31aes4px.js","/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js"],"PhoneScreenshot"]
+3:I[22016,["/PokerLog-Site/_next/static/chunks/14syd31aes4px.js","/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js"],""]
+4:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+a:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+8:X
+1a:X
+1a:C
+0:{"buildId":"wx0VnI_Ar655TsRgwDxvl","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"wiki_article-module__Zj8A-W__layout","children":[["$","article",null,{"className":"article-module__ZSW_Uq__article wiki_article-module__Zj8A-W__article","children":[["$","p",null,{"className":"wiki_article-module__Zj8A-W__section","children":"Статистика и графики"}],["$","h1",null,{"children":"Обзор статистики"}],[["$","p",null,{"children":"Вкладка «Статистика» отвечает на один вопрос: где вы выигрываете."}],"\n",["$","$L2",null,{"src":"/wiki/statistics.webp","darkSrc":"/wiki/statistics-dark.webp","alt":"Вкладка «Статистика»: чистая прибыль во времени и основные показатели"}],"\n",["$","h2",null,{"id":"все-кэш-турниры","children":["$","a",null,{"href":"#все-кэш-турниры","children":"Все, кэш, турниры"}]}],"\n",["$","h2",null,{"id":"фильтры","children":["$","a",null,{"href":"#фильтры","children":"Фильтры"}]}],"\n",["$","p",null,{"children":"Период, лайв или онлайн, место и игра."}],"\n",["$","aside",null,{"className":"callout-module__VvYcgG__callout callout-module__VvYcgG__pro","children":[["$","span",null,{"className":"callout-module__VvYcgG__icon","aria-hidden":"true","children":["$","span",null,{"className":"material-symbols-rounded icon-module__iORj2G__icon icon-module__iORj2G__iconFilled icon-module__iORj2G__small","children":"star"}]}],["$","div",null,{"className":"callout-module__VvYcgG__body","children":"Во Free статистика охватывает последние 30 дней. Pro открывает любой период, фильтры и разбивки."}]]}],"\n",["$","aside",null,{"className":"callout-module__VvYcgG__callout callout-module__VvYcgG__todo","children":[["$","span",null,{"className":"callout-module__VvYcgG__icon","aria-hidden":"true","children":["$","span",null,{"className":"material-symbols-rounded icon-module__iORj2G__icon icon-module__iORj2G__iconFilled icon-module__iORj2G__small","children":"target"}]}],["$","div",null,{"className":"callout-module__VvYcgG__body","children":"TODO: итоги месяца и календарь результатов."}]]}]],["$","nav",null,{"className":"wiki_article-module__Zj8A-W__pager","aria-label":"Предыдущая и следующая страницы","children":[["$","$L3",null,{"href":"/ru/wiki/hands/smart-hand","className":"wiki_article-module__Zj8A-W__pagerLink","children":[["$","span",null,{"children":"Назад"}],"Smart Hand: раздача голосом"]}],["$","$L3",null,{"href":"/ru/wiki/statistics/metrics","className":"wiki_article-module__Zj8A-W__pagerLink wiki_article-module__Zj8A-W__pagerNext","children":[["$","span",null,{"children":"Дальше"}],"Что значит каждый показатель"]}]]}]]}],["$","aside",null,{"className":"wiki_article-module__Zj8A-W__toc","children":["$","nav",null,{"className":"wiki_toc-module__qAWKMW__toc","aria-label":"На этой странице","children":[["$","p",null,{"className":"wiki_toc-module__qAWKMW__title","children":"На этой странице"}],["$","ul",null,{"role":"list","children":[["$","li","все-кэш-турниры",{"className":"","children":["$","a",null,{"href":"#все-кэш-турниры","children":"Все, кэш, турниры"}]}],["$","li","фильтры",{"className":"","children":["$","a",null,{"href":"#фильтры","children":"Фильтры"}]}]]}]]}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Обзор статистики · Справка Pokerlog · Pokerlog"}],["$","meta","1",{"name":"description","content":"Записывайте кэш и турниры, ведите лайв-сессию с экрана блокировки, сохраняйте раздачи и смотрите, где вы выигрываете."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/PokerLog-Site/"}],["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/PokerLog-Site/ru/"}],["$","meta","5",{"property":"og:title","content":"Pokerlog: трекер покерных сессий для iPhone"}],["$","meta","6",{"property":"og:description","content":"Каждая сессия на счету. Кэш, турниры, раздачи и банкролл в одном месте."}],"$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15"]}]}]}],"$L16"]}],"isPartial":"$@17","staleTime":"$8","varyParams":null},{"rsc":"$L18","isPartial":"$@19","staleTime":"$8","varyParams":"$1a"},{"rsc":"$L1b","isPartial":"$@1c","staleTime":"$8","varyParams":null},{"rsc":"$L1d","isPartial":"$@1e","staleTime":"$8","varyParams":"$1a"}],"isUpgradeableISRFallback":false,"a":"$@1f","rootVaryParams":null,"needsRuntimeRequest":"$@20"}
+21:I[39756,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+22:I[37457,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+23:I[38483,["/PokerLog-Site/_next/static/chunks/14syd31aes4px.js","/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js"],"WikiSidebar"]
+24:I[21620,["/PokerLog-Site/_next/static/chunks/14syd31aes4px.js","/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js"],"WikiSearch"]
+:HL["/PokerLog-Site/_next/static/chunks/1jreiykd0l9il.css","style"]
+6:null
+b:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/PokerLog-Site/ru/"}]
+c:["$","meta","8",{"property":"og:locale","content":"ru_RU"}]
+d:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/PokerLog-Site/og-preview.png"}]
+e:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+f:["$","meta","11",{"property":"og:image:height","content":"720"}]
+10:["$","meta","12",{"property":"og:image:alt","content":"Иконка Pokerlog и подпись Every session, counted"}]
+11:["$","meta","13",{"property":"og:type","content":"website"}]
+12:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+13:["$","meta","15",{"name":"twitter:title","content":"Pokerlog: трекер покерных сессий для iPhone"}]
+14:["$","meta","16",{"name":"twitter:description","content":"Каждая сессия на счету. Кэш, турниры, раздачи и банкролл в одном месте."}]
+15:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/PokerLog-Site/og-preview.png"}]
+16:["$","meta",null,{"name":"next-size-adjust","content":""}]
+18:["$","$1","c",{"children":[null,["$","$L21",null,{"parallelRouterKey":"children","template":["$","$L22",null,{}]}]]}]
+1b:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/PokerLog-Site/_next/static/chunks/1jreiykd0l9il.css","precedence":"next"}],["$","script","script-0",{"src":"/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js","async":true}]],["$","div",null,{"className":"wiki_layout-module__jjRz8a__wiki","children":[["$","$L23",null,{"locale":"ru","search":["$","$L24",null,{"indexHref":"/ru/wiki/search-index.json","labels":{"placeholder":"Поиск по справке","loading":"Загрузка","nothingFound":"По запросу «{query}» ничего нет."}}]}],["$","div",null,{"className":"wiki_layout-module__jjRz8a__page","children":["$","$L21",null,{"parallelRouterKey":"children","template":["$","$L22",null,{}]}]}]]}]]}]
+1d:["$","$1","c",{"children":[null,["$","$L21",null,{"parallelRouterKey":"children","template":["$","$L22",null,{}]}]]}]
+20:true
+8:300
+8:C
+1f:0
+17:"$undefined"
+19:"$undefined"
+1c:"$undefined"
+1e:"$undefined"
+7:"$undefined"

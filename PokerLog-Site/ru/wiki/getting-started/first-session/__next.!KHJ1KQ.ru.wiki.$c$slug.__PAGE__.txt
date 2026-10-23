@@ -1,0 +1,42 @@
+1:"$Sreact.fragment"
+2:I[95527,["/PokerLog-Site/_next/static/chunks/14syd31aes4px.js","/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js"],"PhoneScreenshot"]
+3:I[22016,["/PokerLog-Site/_next/static/chunks/14syd31aes4px.js","/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js"],""]
+4:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"ViewportBoundary"]
+a:I[97367,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"MetadataBoundary"]
+8:X
+1b:X
+1b:C
+0:{"buildId":"wx0VnI_Ar655TsRgwDxvl","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"wiki_article-module__Zj8A-W__layout","children":[["$","article",null,{"className":"article-module__ZSW_Uq__article wiki_article-module__Zj8A-W__article","children":[["$","p",null,{"className":"wiki_article-module__Zj8A-W__section","children":"Начало работы"}],["$","h1",null,{"children":"Первая сессия"}],[["$","p",null,{"children":"Сессия — это одна игра за столом: где вы играли, какая игра, сколько внесли и сколько забрали."}],"\n",["$","$L2",null,{"src":"/wiki/sessions-list.webp","darkSrc":"/wiki/sessions-list-dark.webp","alt":"Вкладка «Сессии»: список кэш-игр и турниров","caption":"Ваши сессии, новые сверху"}],"\n",["$","h2",null,{"id":"записать-сессию-которую-вы-уже-сыграли","children":["$","a",null,{"href":"#записать-сессию-которую-вы-уже-сыграли","children":"Записать сессию, которую вы уже сыграли"}]}],"\n",["$","p",null,{"children":["На вкладке «Сессии» нажмите ",["$","strong",null,{"children":"Новая сессия"}]," и пройдите шаги по очереди: место, игра, внесено, получено и когда.\nРезультат посчитается сам."]}],"\n",["$","h2",null,{"id":"вести-сессию-во-время-игры","children":["$","a",null,{"href":"#вести-сессию-во-время-игры","children":"Вести сессию во время игры"}]}],"\n",["$","p",null,{"children":["Начните ",["$","strong",null,{"children":"лайв-сессию"}],", когда садитесь за стол. Подробнее — в разделе ",["$","$L3",null,{"href":"/ru/wiki/sessions/live-session/","children":"Лайв-сессия"}],"."]}],"\n",["$","aside",null,{"className":"callout-module__VvYcgG__callout callout-module__VvYcgG__todo","children":[["$","span",null,{"className":"callout-module__VvYcgG__icon","aria-hidden":"true","children":["$","span",null,{"className":"material-symbols-rounded icon-module__iORj2G__icon icon-module__iORj2G__iconFilled icon-module__iORj2G__small","children":"target"}]}],["$","div",null,{"className":"callout-module__VvYcgG__body","children":"TODO: пошаговый разбор со скриншотом каждого шага."}]]}]],["$","nav",null,{"className":"wiki_article-module__Zj8A-W__pager","aria-label":"Предыдущая и следующая страницы","children":[["$","$L3",null,{"href":"/ru/wiki/getting-started/install","className":"wiki_article-module__Zj8A-W__pagerLink","children":[["$","span",null,{"children":"Назад"}],"Установка"]}],["$","$L3",null,{"href":"/ru/wiki/getting-started/places-and-stakes","className":"wiki_article-module__Zj8A-W__pagerLink wiki_article-module__Zj8A-W__pagerNext","children":[["$","span",null,{"children":"Дальше"}],"Валюта, места и лимиты"]}]]}]]}],["$","aside",null,{"className":"wiki_article-module__Zj8A-W__toc","children":["$","nav",null,{"className":"wiki_toc-module__qAWKMW__toc","aria-label":"На этой странице","children":[["$","p",null,{"className":"wiki_toc-module__qAWKMW__title","children":"На этой странице"}],["$","ul",null,{"role":"list","children":[["$","li","записать-сессию-которую-вы-уже-сыграли",{"className":"","children":["$","a",null,{"href":"#записать-сессию-которую-вы-уже-сыграли","children":"Записать сессию, которую вы уже сыграли"}]}],["$","li","вести-сессию-во-время-игры",{"className":"","children":["$","a",null,{"href":"#вести-сессию-во-время-игры","children":"Вести сессию во время игры"}]}]]}]]}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Первая сессия · Справка Pokerlog · Pokerlog"}],["$","meta","1",{"name":"description","content":"Записывайте кэш и турниры, ведите лайв-сессию с экрана блокировки, сохраняйте раздачи и смотрите, где вы выигрываете."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"en","href":"https://oddlyworking.app/PokerLog-Site/"}],["$","link","4",{"rel":"alternate","hrefLang":"ru","href":"https://oddlyworking.app/PokerLog-Site/ru/"}],["$","meta","5",{"property":"og:title","content":"Pokerlog: трекер покерных сессий для iPhone"}],"$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16"]}]}]}],"$L17"]}],"isPartial":"$@18","staleTime":"$8","varyParams":null},{"rsc":"$L19","isPartial":"$@1a","staleTime":"$8","varyParams":"$1b"},{"rsc":"$L1c","isPartial":"$@1d","staleTime":"$8","varyParams":null},{"rsc":"$L1e","isPartial":"$@1f","staleTime":"$8","varyParams":"$1b"}],"isUpgradeableISRFallback":false,"a":"$@20","rootVaryParams":null,"needsRuntimeRequest":"$@21"}
+22:I[39756,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+23:I[37457,["/PokerLog-Site/_next/static/chunks/2e2n0wy891_-d.js"],"default"]
+24:I[38483,["/PokerLog-Site/_next/static/chunks/14syd31aes4px.js","/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js"],"WikiSidebar"]
+25:I[21620,["/PokerLog-Site/_next/static/chunks/14syd31aes4px.js","/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js"],"WikiSearch"]
+:HL["/PokerLog-Site/_next/static/chunks/1jreiykd0l9il.css","style"]
+6:null
+b:["$","meta","6",{"property":"og:description","content":"Каждая сессия на счету. Кэш, турниры, раздачи и банкролл в одном месте."}]
+c:["$","meta","7",{"property":"og:url","content":"https://oddlyworking.app/PokerLog-Site/ru/"}]
+d:["$","meta","8",{"property":"og:locale","content":"ru_RU"}]
+e:["$","meta","9",{"property":"og:image","content":"https://oddlyworking.app/PokerLog-Site/og-preview.png"}]
+f:["$","meta","10",{"property":"og:image:width","content":"1200"}]
+10:["$","meta","11",{"property":"og:image:height","content":"720"}]
+11:["$","meta","12",{"property":"og:image:alt","content":"Иконка Pokerlog и подпись Every session, counted"}]
+12:["$","meta","13",{"property":"og:type","content":"website"}]
+13:["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}]
+14:["$","meta","15",{"name":"twitter:title","content":"Pokerlog: трекер покерных сессий для iPhone"}]
+15:["$","meta","16",{"name":"twitter:description","content":"Каждая сессия на счету. Кэш, турниры, раздачи и банкролл в одном месте."}]
+16:["$","meta","17",{"name":"twitter:image","content":"https://oddlyworking.app/PokerLog-Site/og-preview.png"}]
+17:["$","meta",null,{"name":"next-size-adjust","content":""}]
+19:["$","$1","c",{"children":[null,["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]]}]
+1c:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/PokerLog-Site/_next/static/chunks/1jreiykd0l9il.css","precedence":"next"}],["$","script","script-0",{"src":"/PokerLog-Site/_next/static/chunks/1lyxwgl2yw-85.js","async":true}]],["$","div",null,{"className":"wiki_layout-module__jjRz8a__wiki","children":[["$","$L24",null,{"locale":"ru","search":["$","$L25",null,{"indexHref":"/ru/wiki/search-index.json","labels":{"placeholder":"Поиск по справке","loading":"Загрузка","nothingFound":"По запросу «{query}» ничего нет."}}]}],["$","div",null,{"className":"wiki_layout-module__jjRz8a__page","children":["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]}]]}]]}]
+1e:["$","$1","c",{"children":[null,["$","$L22",null,{"parallelRouterKey":"children","template":["$","$L23",null,{}]}]]}]
+21:true
+8:300
+8:C
+20:0
+18:"$undefined"
+1a:"$undefined"
+1d:"$undefined"
+1f:"$undefined"
+7:"$undefined"

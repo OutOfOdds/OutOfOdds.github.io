@@ -57,7 +57,7 @@ boot();
 async function boot() {
   wireStaticControls();
   if (DEMO) {
-    cfg = { appName: "PokerLog" };
+    cfg = { appName: "PokerPal" };
     backend = demoBackend();
   } else {
     try {

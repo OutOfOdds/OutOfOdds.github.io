@@ -2,9 +2,9 @@
 // Они публичные по замыслу Apple: дают только то, что разрешено всем, и работают лишь с доменов из своих настроек.
 window.IDEAS_CONFIG = {
   appName: "PokerPal",
-  containerIdentifier: "iCloud.com.mikemailyan.PokerLog",
+  containerIdentifier: "iCloud.com.mikemailyan.PokerPal",
   apiTokens: {
-    development: "02b31f1faa2ff737ecf1d0739d133dce64f003f4b9938ba151b238eef950530c",
-    production: "ff44567ec3ab80e56b7483e6c1499bfe252461884452e9871dc2cd9cbc1dd05d",
+    development: "1c9a49fbc9f9fe95b05ad51c36b59f8b88ad39b2a86ef4f957fcade393856945",
+    production: "",
   },
 };

@@ -6,12 +6,12 @@
 "use strict";
 
 const STATUSES = [
-  { id: "pending", title: "На рассмотрении", note: "Видит только автор. Перетащите в «Открытые», чтобы опубликовать." },
-  { id: "open", title: "Открытые" },
-  { id: "planned", title: "Запланировано", note: "Порядок карточек — очередь: в приложении они идут так же. Перетаскивайте, чтобы поменять." },
-  { id: "inProgress", title: "В работе" },
-  { id: "done", title: "Готово" },
-  { id: "rejected", title: "Отклонено", note: "Не видны никому, кроме автора." },
+  { id: "pending", title: "Under Review", note: "Only the author sees these. Drag to Open to publish." },
+  { id: "open", title: "Open" },
+  { id: "planned", title: "Planned", note: "This order is the queue, and the app shows the same order. Drag to change it." },
+  { id: "inProgress", title: "In Progress" },
+  { id: "done", title: "Done" },
+  { id: "rejected", title: "Declined", note: "Only the author sees these." },
 ];
 // Колонки, порядок в которых задаёт модератор. В приложении они — одна вкладка «Запланировано», «В работе» сверху.
 const QUEUED = ["inProgress", "planned"];
@@ -22,10 +22,7 @@ const VOTES_REFRESH_MS = 5 * 60000;
 const DEMO = new URLSearchParams(location.search).has("demo");
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const plural = (n, one, few, many) => {
-  const m10 = n % 10, m100 = n % 100;
-  return m10 === 1 && m100 !== 11 ? one : m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14) ? few : many;
-};
+const plural = (n, one, many) => (n === 1 ? one : many);
 
 const store = {
   get(key, fallback) { try { return localStorage.getItem(key) ?? fallback; } catch { return fallback; } },
@@ -64,26 +61,26 @@ async function boot() {
       await loadScript("config.js?t=" + Date.now()); // в обход 10-минутного кэша GitHub Pages
       cfg = window.IDEAS_CONFIG || {};
     } catch {
-      return showState("Нет config.js", "Положите <code>config.js</code> рядом со страницей.");
+      return showState("No config.js", "Put <code>config.js</code> next to this page.");
     }
     const token = (cfg.apiTokens || {})[env] || "";
     if (!token) {
       const name = env === "production" ? "Production" : "Development";
-      return showState(`Нет API-токена для ${name}`,
-        `Создайте токен в CloudKit Console → Settings → Tokens &amp; Keys (окружение ${name}) `
-        + `и вставьте его в <code>config.js</code>, в <code>apiTokens.${env}</code>.`);
+      return showState(`No API token for ${name}`,
+        `Create a token in CloudKit Console → Settings → Tokens &amp; Keys (${name} environment) `
+        + `and paste it into <code>config.js</code>, under <code>apiTokens.${env}</code>.`);
     }
     await cloudKitReady();
     backend = cloudBackend(token);
   }
-  document.title = `Идеи ${cfg.appName || ""}`.trim();
+  document.title = `${cfg.appName || ""} Ideas`.trim();
   $("#app-title").textContent = document.title;
   showSkeleton();
   narrow.addEventListener("change", render);
   try {
     setUser(await backend.start(setUser));
   } catch (error) {
-    return showState("CloudKit не ответил", describe(error));
+    return showState("CloudKit didn’t respond", describe(error));
   }
   await load();
   setInterval(() => { if (document.visibilityState === "visible") load({ quiet: true }); }, REFRESH_MS);
@@ -139,8 +136,8 @@ function spinReload() {
 function setUser(identity) {
   user = identity || null;
   const who = $("#user");
-  who.innerHTML = user ? "<b>Модератор</b>" : "Только чтение";
-  who.title = user ? user.userRecordName : "Войдите через Apple ID с ролью Moderator, чтобы менять статусы";
+  who.innerHTML = user ? "<b>Moderator</b>" : "Read only";
+  who.title = user ? user.userRecordName : "Sign in with an Apple Account that has the Moderator role to change statuses";
   render();
 }
 
@@ -230,8 +227,8 @@ function cloudBackend(apiToken) {
   }
 
   function watchAuth(onChange) {
-    if (user) container.whenUserSignsOut().then(() => { onChange(null); toast("Вы вышли: доска только для чтения"); watchAuth(onChange); });
-    else container.whenUserSignsIn().then((identity) => { onChange(identity); toast("Вы вошли как модератор"); watchAuth(onChange); }).catch(() => {});
+    if (user) container.whenUserSignsOut().then(() => { onChange(null); toast("Signed out: the board is read only"); watchAuth(onChange); });
+    else container.whenUserSignsIn().then((identity) => { onChange(identity); toast("Signed in as moderator"); watchAuth(onChange); }).catch(() => {});
   }
 
   return {
@@ -336,20 +333,20 @@ function cloudBackend(apiToken) {
 function demoBackend() {
   const now = Date.now();
   const rows = [
-    ["Синхронизация между iPhone и iPad", "Хочу записывать сессии на телефоне в клубе, а разбирать раздачи дома на iPad. Сейчас данные живут только на одном устройстве.", "open", 21, 128, 9],
-    ["Экспорт сессий в CSV для Excel", "Чтобы считать налоги и строить свои графики. Достаточно даты, места, бай-ина, кэшаута и длительности.", "open", 9, 64, 22],
-    ["Заметки об оппонентах", "Короткая заметка и цветная метка у игрока, которые видны в каждой раздаче с ним.", "open", 4, 37, 31],
-    ["Учёт рейка и чаевых", "Отдельное поле в сессии, чтобы видеть, сколько уходит заведению.", "open", 2, 3, 3],
-    ["Виджет с результатом за неделю", "Маленький виджет на экране «Домой»: плюс или минус за 7 дней и число сессий.", "pending", .2, 0, 0],
-    ["Тёмная тема для экрана лайва", "Ночью в клубе экран слишком яркий, хочется ещё темнее.", "pending", .6, 0, 0],
-    ["Импорт из PokerTracker", "Перенести старую историю, чтобы статистика была за все годы.", "pending", 1.5, 0, 0],
-    ["Таймер блайндов для домашних турниров", "Структура уровней, звук на смене и большой экран, который видно со всего стола.", "planned", 40, 91, 4],
-    ["Приложение для Apple Watch", "Смотреть время сессии и добавлять докупки, не доставая телефон.", "planned", 30, 12, 1],
-    ["Статистика по позициям", "VPIP, PFR и результат по каждой позиции за выбранный период.", "inProgress", 55, 73, 6],
-    ["Тёмная тема для карточек раздач", "Карточки раздач, которыми делишься, в тёмных цветах.", "done", 80, 54, 0],
-    ["Голосовая запись раздачи", "Надиктовать раздачу сразу после неё, а приложение само расставит действия.", "done", 120, 143, 2],
-    ["Ставки на спорт", "Учёт ставок рядом с покером.", "rejected", 60, 3, 0],
-    ["Синк с айпадом", "Чтобы на планшете были те же сессии.", "rejected", 14, 6, 1],
+    ["Sync between iPhone and iPad", "I want to log sessions on my phone at the club and review hands at home on my iPad. Right now the data lives on one device.", "open", 21, 128, 9],
+    ["Export sessions to CSV for Excel", "For taxes and my own charts. Date, venue, buy-in, cash-out and duration are enough.", "open", 9, 64, 22],
+    ["Notes on opponents", "A short note and a color tag on a player, visible in every hand with them.", "open", 4, 37, 31],
+    ["Track rake and tips", "A separate session field to see how much goes to the house.", "open", 2, 3, 3],
+    ["Weekly result widget", "A small Home Screen widget: up or down over 7 days and the number of sessions.", "pending", .2, 0, 0],
+    ["Darker live session screen", "At night in the club the screen is too bright, I want it even darker.", "pending", .6, 0, 0],
+    ["Import from PokerTracker", "Bring over my old history so stats cover all my years.", "pending", 1.5, 0, 0],
+    ["Blind timer for home tournaments", "Level structure, a sound on change and a big screen the whole table can see.", "planned", 40, 91, 4],
+    ["Apple Watch app", "See session time and add rebuys without taking out my phone.", "planned", 30, 12, 1],
+    ["Stats by position", "VPIP, PFR and results for each position over a chosen period.", "inProgress", 55, 73, 6],
+    ["Dark theme for hand cards", "Shared hand cards in dark colors.", "done", 80, 54, 0],
+    ["Voice hand entry", "Dictate a hand right after it and let the app place the actions.", "done", 120, 143, 2],
+    ["Sports betting", "Track bets next to poker.", "rejected", 60, 3, 0],
+    ["iPad sync", "The same sessions on my tablet.", "rejected", 14, 6, 1],
   ];
   let data = rows.map(([title, details, status, days, votes, votesWeek], i) => ({
     id: "demo-" + (i + 1), tag: "t0", title, details, status, votes, votesWeek, ownVotes: votes,
@@ -357,21 +354,21 @@ function demoBackend() {
     created: now - days * DAY, version: "3." + (i % 3) + " (" + (40 + i) + ")", author: "_" + (0x9a3f20 + i * 7919).toString(16),
   }));
   const set = (id, fields) => { data = data.map((i) => (i.id === id ? { ...i, ...fields } : i)); };
-  set("demo-14", { mergedInto: "demo-1", reply: MERGED_REPLY + "Синхронизация между iPhone и iPad»: голоса перенесены туда." });
-  set("demo-8", { reply: "Берём следующим после статистики по позициям." });
+  set("demo-14", { mergedInto: "demo-1", reply: MERGED_REPLY + "Sync between iPhone and iPad»: голоса перенесены туда." });
+  set("demo-8", { reply: "Next up after stats by position." });
   set("demo-12", { releasedIn: "3.1" });
-  set("demo-13", { reply: "Приложение про покер, ставки на спорт в него не впишутся." });
+  set("demo-13", { reply: "This app is about poker, so sports betting doesn’t fit." });
   let order = ["demo-10", "demo-8", "demo-9"];
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
   const authButton = $("#demo-auth");
   return {
     async start(onChange) {
       authButton.hidden = false;
-      const paint = () => { authButton.textContent = user ? "Выйти" : "Войти (демо)"; authButton.className = user ? "btn" : "btn primary"; };
+      const paint = () => { authButton.textContent = user ? "Sign Out" : "Sign In (Demo)"; authButton.className = user ? "btn" : "btn primary"; };
       authButton.onclick = () => {
         onChange(user ? null : { userRecordName: "_demo-moderator" });
         paint();
-        toast(user ? "Вы вошли как модератор (демо)" : "Вы вышли: доска только для чтения");
+        toast(user ? "Signed in as moderator (demo)" : "Signed out: the board is read only");
       };
       user = DEMO && new URLSearchParams(location.search).has("signedin") ? { userRecordName: "_demo-moderator" } : null;
       paint();
@@ -410,7 +407,7 @@ async function load({ quiet = false } = {}) {
   // An automatic refresh waits while a card is being dragged or saved, so it doesn't move cards under the cursor.
   if (loading || (quiet && (dragId || saving.size))) return;
   loading = true;
-  if (!quiet) { $("#updated").textContent = "Обновляю…"; $("#updated").className = "updated busy"; spinReload(); }
+  if (!quiet) { $("#updated").textContent = "Refreshing…"; $("#updated").className = "updated busy"; spinReload(); }
   try {
     const result = await backend.load({ withVotes: !quiet || Date.now() - votesAt > VOTES_REFRESH_MS });
     ideas = result.ideas.filter((i) => STATUSES.some((s) => s.id === i.status));
@@ -420,8 +417,8 @@ async function load({ quiet = false } = {}) {
     if (result.votesFresh) votesAt = loadedAt;
     render();
   } catch (error) {
-    if (!loaded) showState("Не удалось загрузить идеи", describe(error));
-    else if (!quiet) toast("Не удалось обновить. " + describe(error));
+    if (!loaded) showState("Couldn’t load ideas", describe(error));
+    else if (!quiet) toast("Couldn’t refresh. " + describe(error));
   } finally {
     loading = false;
     renderUpdated();
@@ -431,18 +428,18 @@ async function load({ quiet = false } = {}) {
 function describe(error) {
   const code = error && (error.ckErrorCode || error.serverErrorCode);
   switch (code) {
-    case "ACCESS_DENIED": return "Нет прав. Изменять идеи может только пользователь с ролью Moderator.";
+    case "ACCESS_DENIED": return "Not allowed. Only a user with the Moderator role can change ideas.";
     case "AUTHENTICATION_REQUIRED":
-    case "AUTHENTICATION_FAILED": return "Войдите через Apple ID.";
-    case "CONFLICT": return "Идею изменили в другом месте. Обновите доску.";
+    case "AUTHENTICATION_FAILED": return "Sign in with your Apple Account.";
+    case "CONFLICT": return "This idea was changed elsewhere. Refresh the board.";
     case "NOT_FOUND":
     case "UNKNOWN_ITEM": return env === "production"
-      ? "В Production нет схемы. Выкатите её в CloudKit Console: Deploy Schema Changes."
-      : "Записи не найдены.";
+      ? "Production has no schema. Deploy it in CloudKit Console: Deploy Schema Changes."
+      : "Records not found.";
     case "THROTTLED":
-    case "TRY_AGAIN_LATER": return "CloudKit просит подождать. Попробуйте через минуту.";
-    case "BAD_REQUEST": return (error.reason || "CloudKit отклонил запрос") + ". Возможно, схема в этом окружении старая: обновите её по CloudKit/schema.ckdb.";
-    default: return (error && (error.reason || error.message)) || "Проверьте соединение и попробуйте ещё раз.";
+    case "TRY_AGAIN_LATER": return "CloudKit asks to wait. Try again in a minute.";
+    case "BAD_REQUEST": return (error.reason || "CloudKit rejected the request") + ". The schema in this environment may be out of date: update it from CloudKit/schema.ckdb.";
+    default: return (error && (error.reason || error.message)) || "Check your connection and try again.";
   }
 }
 
@@ -469,19 +466,19 @@ function renderSwitcher(counts) {
 function renderUpdated() {
   if (!loadedAt || loading) return;
   const min = Math.floor((Date.now() - loadedAt) / 60000);
-  $("#updated").textContent = min < 1 ? "Обновлено только что" : `Обновлено ${min} мин назад`;
+  $("#updated").textContent = min < 1 ? "Updated just now" : `Updated ${min} min ago`;
   $("#updated").className = "updated" + (user ? "" : " readonly");
 }
 
 const ago = (t) => {
   const ms = Date.now() - t, d = Math.floor(ms / DAY);
-  if (d < 1) return Math.max(1, Math.round(ms / 3600000)) + " ч назад";
-  if (d < 30) return d + " дн назад";
+  if (d < 1) return Math.max(1, Math.round(ms / 3600000)) + "h ago";
+  if (d < 30) return d + "d ago";
   return shortDate(t);
 };
 const shortDate = (t) => {
   const d = new Date(t), sameYear = d.getFullYear() === new Date().getFullYear();
-  return d.toLocaleDateString("ru-RU", { day: "numeric", month: "short", ...(sameYear ? {} : { year: "numeric" }) }).replace(/\.$| г\.$/, "");
+  return d.toLocaleDateString("en-US", { day: "numeric", month: "short", ...(sameYear ? {} : { year: "numeric" }) });
 };
 const statusTitle = (id) => (STATUSES.find((s) => s.id === id) || {}).title || id;
 const isUnseen = (i) => previousVisit > 0 && i.created > previousVisit;
@@ -527,9 +524,9 @@ function render() {
     const classes = ["col", isFolded ? "folded" : "", s.id === activeColumn ? "active" : ""].filter(Boolean).join(" ");
     return `<section class="${classes}" data-status="${s.id}" aria-label="${s.title}">
       <div class="col-head"><span class="dot ${s.id}"></span><h2>${s.title}</h2><span class="count">${items.length}</span>
-        <button class="fold" data-fold="${s.id}" aria-label="Свернуть колонку «${s.title}»" title="Свернуть">${icon.fold}</button></div>
+        <button class="fold" data-fold="${s.id}" aria-label="Collapse ${s.title}" title="Collapse">${icon.fold}</button></div>
       ${s.note ? `<div class="col-note">${s.note}</div>` : ""}
-      <div class="list">${items.length ? items.map(card).join("") : `<div class="empty">${query || version ? "Ничего не найдено" : "Пока пусто"}</div>`}</div>
+      <div class="list">${items.length ? items.map(card).join("") : `<div class="empty">${query || version ? "No results" : "Nothing here yet"}</div>`}</div>
     </section>`;
   }).join("");
   renderPanel();
@@ -541,7 +538,7 @@ function renderVersions() {
   const versions = [...new Set(onBoard().map((i) => marketing(i.version)).filter(Boolean))]
     .sort((a, b) => b.localeCompare(a, "ru", { numeric: true }));
   if (version && !versions.includes(version)) version = "";
-  const html = `<option value="">Все версии</option>` + versions.map((v) => `<option value="${esc(v)}"${v === version ? " selected" : ""}>v${esc(v)}</option>`).join("");
+  const html = `<option value="">All versions</option>` + versions.map((v) => `<option value="${esc(v)}"${v === version ? " selected" : ""}>v${esc(v)}</option>`).join("");
   if (select.innerHTML !== html) select.innerHTML = html;
   select.hidden = versions.length < 2;
 }
@@ -554,11 +551,11 @@ function renderStats() {
   const votesWeek = board.reduce((s, i) => s + i.votesWeek, 0);
   const top = board.filter((i) => i.status === "open").sort(comparators.votes)[0];
   $("#stats").innerHTML = [
-    pending ? `<button class="stat attention" data-jump="pending" title="Показать колонку «На рассмотрении»"><b>${pending}</b>${plural(pending, "ждёт проверки", "ждут проверки", "ждут проверки")}</button>` : "",
-    unseen ? `<div class="stat"><b>${unseen}</b>${plural(unseen, "новая с прошлого визита", "новые с прошлого визита", "новых с прошлого визита")}</div>` : "",
-    `<div class="stat"><b>${votesWeek.toLocaleString("ru-RU")}</b>${plural(votesWeek, "голос за неделю", "голоса за неделю", "голосов за неделю")}</div>`,
-    top ? `<button class="stat" data-open="${esc(top.id)}" title="Открыть лидера"><b>${top.votes}</b>лидер:<span class="lead">${esc(top.title)}</span></button>` : "",
-    unreleased ? `<button class="stat" data-jump="done" title="Готовые идеи без версии выхода: в приложении у них не будет «Вышло в версии»"><b>${unreleased}</b>без версии выхода</button>` : "",
+    pending ? `<button class="stat attention" data-jump="pending" title="Show Under Review"><b>${pending}</b>to review</button>` : "",
+    unseen ? `<div class="stat"><b>${unseen}</b>new since last visit</div>` : "",
+    `<div class="stat"><b>${votesWeek.toLocaleString("en-US")}</b>${plural(votesWeek, "vote this week", "votes this week")}</div>`,
+    top ? `<button class="stat" data-open="${esc(top.id)}" title="Open the top idea"><b>${top.votes}</b>top:<span class="lead">${esc(top.title)}</span></button>` : "",
+    unreleased ? `<button class="stat" data-jump="done" title="Done ideas with no version: the app won’t show “Shipped in” for them"><b>${unreleased}</b>with no version</button>` : "",
   ].join("");
 }
 
@@ -572,31 +569,31 @@ function card(i) {
   const place = QUEUED.includes(i.status) ? queue.order.indexOf(i.id) : -1;
   const dupes = duplicatesOf(i.id).length;
   return `<article class="${classes}" tabindex="0" data-id="${esc(i.id)}" data-status="${i.status}" draggable="${canMove}"
-      aria-label="${esc(i.title)}, ${i.votes} ${plural(i.votes, "голос", "голоса", "голосов")}${isUnseen(i) ? ", новая" : ""}">
+      aria-label="${esc(i.title)}, ${i.votes} ${plural(i.votes, "vote", "votes")}${isUnseen(i) ? ", new" : ""}">
     <div class="votes${i.votes >= 100 ? " hot" : ""}" aria-hidden="true">${icon.up}${i.votes}</div>
     <div class="card-body">
       <div class="card-title">${esc(i.title)}</div>
       <div class="card-meta">
-        ${place >= 0 ? `<span class="tag queue" title="Место в очереди">№${place + 1}</span>` : ""}
-        ${Date.now() - i.created < 2 * DAY ? '<span class="tag">новая</span>' : ""}
-        ${i.status === "done" && i.releasedIn ? `<span class="tag released">вышло в ${esc(i.releasedIn)}</span>` : ""}
+        ${place >= 0 ? `<span class="tag queue" title="Place in the queue">#${place + 1}</span>` : ""}
+        ${Date.now() - i.created < 2 * DAY ? '<span class="tag">new</span>' : ""}
+        ${i.status === "done" && i.releasedIn ? `<span class="tag released">shipped in ${esc(i.releasedIn)}</span>` : ""}
         <span>${ago(i.created)}</span>
-        ${i.votesWeek ? `<span class="trend" title="Голоса за 7 дней">↑${i.votesWeek} за неделю</span>` : ""}
-        ${dupes ? `<span class="tag dupes" title="Объединённые дубли">+${dupes} ${plural(dupes, "дубль", "дубля", "дублей")}</span>` : ""}
-        ${i.reply ? `<span class="has-reply" title="Есть ответ: ${esc(i.reply)}">${icon.reply}</span>` : ""}
+        ${i.votesWeek ? `<span class="trend" title="Votes in the last 7 days">↑${i.votesWeek} this week</span>` : ""}
+        ${dupes ? `<span class="tag dupes" title="Merged duplicates">+${dupes} ${plural(dupes, "duplicate", "duplicates")}</span>` : ""}
+        ${i.reply ? `<span class="has-reply" title="Has a reply: ${esc(i.reply)}">${icon.reply}</span>` : ""}
       </div>
-      <div class="move"><select data-move="${esc(i.id)}" aria-label="Статус" ${canMove ? "" : "disabled"}>${statusOptions(i.status)}</select></div>
+      <div class="move"><select data-move="${esc(i.id)}" aria-label="Status" ${canMove ? "" : "disabled"}>${statusOptions(i.status)}</select></div>
     </div>
     ${canMove && i.status === "pending" ? `<div class="quick">
-      <button class="btn small primary" data-quick="open">Опубликовать</button>
-      <button class="btn small" data-quick="rejected">Отклонить</button></div>` : ""}
+      <button class="btn small primary" data-quick="open">Publish</button>
+      <button class="btn small" data-quick="rejected">Decline</button></div>` : ""}
   </article>`;
 }
 
 function replyHint(i) {
-  if (i.status === "pending") return "Автор увидит ответ в приложении. Остальным идея ещё не видна.";
-  if (i.status === "rejected") return "Увидит только автор: например, почему идея не подошла.";
-  return "Виден всем в карточке идеи. Тем, кто следит за идеей, придёт уведомление.";
+  if (i.status === "pending") return "The author sees this reply in the app. Nobody else sees the idea yet.";
+  if (i.status === "rejected") return "Only the author sees this: say why the idea didn’t fit, for example.";
+  return "Everyone sees this on the idea. People following it get a notification.";
 }
 
 function renderPanel() {
@@ -612,48 +609,48 @@ function renderPanel() {
   <aside class="panel${panelEntering ? " enter" : ""}" role="dialog" aria-modal="true" aria-label="${esc(i.title)}">
     <div class="panel-top">
       <span class="badge ${i.status}"><span class="dot ${i.status}"></span>${statusTitle(i.status)}</span>
-      <button class="close" data-close aria-label="Закрыть">${icon.close}</button>
+      <button class="close" data-close aria-label="Close">${icon.close}</button>
     </div>
-    ${target ? `<div class="merged-note">Дубль идеи <button class="link" data-open="${esc(target.id)}">«${esc(target.title)}»</button>: его голоса считаются там.</div>` : ""}
+    ${target ? `<div class="merged-note">Duplicate of <button class="link" data-open="${esc(target.id)}">${esc(target.title)}</button>. Its votes count there.</div>` : ""}
     ${editing ? `<form class="edit" id="edit-form">
-        <label class="field">Название<input class="input" id="edit-title" maxlength="${TITLE_LIMIT}" required value="${esc(i.title)}"></label>
+        <label class="field">Title<input class="input" id="edit-title" maxlength="${TITLE_LIMIT}" required value="${esc(i.title)}"></label>
         <span class="counter" id="title-count"></span>
-        <label class="field">Описание<textarea class="input" id="edit-details" maxlength="${DETAILS_LIMIT}">${esc(i.details)}</textarea></label>
+        <label class="field">Description<textarea class="input" id="edit-details" maxlength="${DETAILS_LIMIT}">${esc(i.details)}</textarea></label>
         <span class="counter" id="details-count"></span>
-        <div class="row"><button class="btn primary" type="submit">Сохранить</button><button class="btn" type="button" id="edit-cancel">Отмена</button></div>
+        <div class="row"><button class="btn primary" type="submit">Save</button><button class="btn" type="button" id="edit-cancel">Cancel</button></div>
       </form>` : `<div class="text"><h3>${esc(i.title)}</h3>
-      ${i.details ? `<p>${esc(i.details)}</p>` : '<p class="empty-text">Автор не добавил описания.</p>'}
-      ${user ? '<button class="btn small" id="edit" style="align-self:flex-start">Исправить текст</button>' : ""}</div>`}
+      ${i.details ? `<p>${esc(i.details)}</p>` : '<p class="empty-text">The author didn’t add a description.</p>'}
+      ${user ? '<button class="btn small" id="edit" style="align-self:flex-start">Edit Text</button>' : ""}</div>`}
     <dl class="facts">
-      <div><dt>Голоса</dt><dd>${i.votes}${i.votesWeek ? `<small>↑${i.votesWeek}</small>` : ""}</dd></div>
-      <div><dt>Предложена</dt><dd title="${esc(new Date(i.created).toLocaleString("ru-RU"))}">${shortDate(i.created)}</dd></div>
-      <div><dt>Версия</dt><dd>${esc(i.version || "—")}</dd></div>
-      <div><dt>Автор</dt><dd class="mono" title="${esc(i.author || "")}">${esc(i.author || "—")}</dd></div>
+      <div><dt>Votes</dt><dd>${i.votes}${i.votesWeek ? `<small>↑${i.votesWeek}</small>` : ""}</dd></div>
+      <div><dt>Suggested</dt><dd title="${esc(new Date(i.created).toLocaleString("en-US"))}">${shortDate(i.created)}</dd></div>
+      <div><dt>Version</dt><dd>${esc(i.version || "—")}</dd></div>
+      <div><dt>Author</dt><dd class="mono" title="${esc(i.author || "")}">${esc(i.author || "—")}</dd></div>
     </dl>
-    <div class="section-label">Статус</div>
-    <div class="status-pick" role="radiogroup" aria-label="Статус">
+    <div class="section-label">Status</div>
+    <div class="status-pick" role="radiogroup" aria-label="Status">
       ${STATUSES.map((s, n) => `<button role="radio" class="${s.id}" data-set-status="${s.id}" aria-checked="${s.id === i.status}" ${locked ? "disabled" : ""}>
         <span class="dot ${s.id}"></span>${s.title}${user ? `<kbd>${n + 1}</kbd>` : ""}</button>`).join("")}
     </div>
     ${user ? `<form class="reply" id="reply-form">
-      <label class="field">Ответ ${i.status === "rejected" ? "автору" : "в приложении"}
-        <textarea class="input" id="reply" maxlength="${REPLY_LIMIT}" placeholder="${i.status === "rejected" ? "Почему не подошла" : "Например: «Сделаем в 3.5, вместе с виджетами»"}">${esc(i.reply)}</textarea></label>
-      ${showRelease ? `<label class="field">Вышло в версии<input class="input" id="released" maxlength="40" placeholder="3.4" value="${esc(i.releasedIn)}"></label>` : ""}
-      <div class="row"><button class="btn primary small" type="submit" id="reply-save" disabled>Сохранить</button><span class="hint">${replyHint(i)}</span></div>
-    </form>` : i.reply || i.releasedIn ? `<div class="reply-view">${i.reply ? `<div class="section-label">Ответ</div><p>${esc(i.reply)}</p>` : ""}
-      ${i.releasedIn ? `<p class="hint">Вышло в версии ${esc(i.releasedIn)}</p>` : ""}</div>` : ""}
+      <label class="field">${i.status === "rejected" ? "Reply to the author" : "Reply in the app"}
+        <textarea class="input" id="reply" maxlength="${REPLY_LIMIT}" placeholder="${i.status === "rejected" ? "Why it didn’t fit" : "For example: Coming in 3.5, together with widgets"}">${esc(i.reply)}</textarea></label>
+      ${showRelease ? `<label class="field">Shipped in version<input class="input" id="released" maxlength="40" placeholder="3.4" value="${esc(i.releasedIn)}"></label>` : ""}
+      <div class="row"><button class="btn primary small" type="submit" id="reply-save" disabled>Save</button><span class="hint">${replyHint(i)}</span></div>
+    </form>` : i.reply || i.releasedIn ? `<div class="reply-view">${i.reply ? `<div class="section-label">Reply</div><p>${esc(i.reply)}</p>` : ""}
+      ${i.releasedIn ? `<p class="hint">Shipped in version ${esc(i.releasedIn)}</p>` : ""}</div>` : ""}
     ${!target && (dupes.length || (user && i.status !== "pending")) ? `<div class="dupes-box">
-      <div class="section-label">Дубли</div>
+      <div class="section-label">Duplicates</div>
       ${dupes.map((d) => `<div class="dupe"><button class="link" data-open="${esc(d.id)}">${esc(d.title)}</button>
-        <span class="hint">${d.ownVotes} ${plural(d.ownVotes, "голос", "голоса", "голосов")}</span>
-        ${user ? `<button class="btn small" data-unmerge="${esc(d.id)}">Разъединить</button>` : ""}</div>`).join("")}
-      ${user ? (merging ? mergePicker(i) : `<button class="btn small" id="merge" style="align-self:flex-start">Это дубль другой идеи…</button>`) : ""}
+        <span class="hint">${d.ownVotes} ${plural(d.ownVotes, "vote", "votes")}</span>
+        ${user ? `<button class="btn small" data-unmerge="${esc(d.id)}">Unmerge</button>` : ""}</div>`).join("")}
+      ${user ? (merging ? mergePicker(i) : `<button class="btn small" id="merge" style="align-self:flex-start">Merge into another idea…</button>`) : ""}
     </div>` : ""}
-    ${!user ? '<span class="hint">Чтобы менять статус и отвечать, войдите через Apple ID с ролью Moderator.</span>' : ""}
+    ${!user ? '<span class="hint">To change the status or reply, sign in with an Apple Account that has the Moderator role.</span>' : ""}
     ${user ? `<div class="panel-foot">${confirmDelete
-      ? `<div class="confirm"><span>Удалить идею насовсем? Это нельзя отменить, голоса за неё перестанут учитываться.</span>
-           <div class="row"><button class="btn danger-fill" id="del-yes">Удалить</button><button class="btn" id="del-no">Отмена</button></div></div>`
-      : '<span class="keys"><kbd>E</kbd> правка · <kbd>Esc</kbd> закрыть</span><button class="btn small danger" id="del">Удалить идею</button>'}</div>` : ""}
+      ? `<div class="confirm"><span>Delete this idea for good? This can’t be undone, and its votes stop counting.</span>
+           <div class="row"><button class="btn danger-fill" id="del-yes">Delete</button><button class="btn" id="del-no">Cancel</button></div></div>`
+      : '<span class="keys"><kbd>E</kbd> edit <kbd>Esc</kbd> close</span><button class="btn small danger" id="del">Delete Idea</button>'}</div>` : ""}
   </aside>`;
   if (editing) {
     const title = $("#edit-title"), details = $("#edit-details");
@@ -691,15 +688,15 @@ function mergeOptions(i) {
   return options.length
     ? options.map((x) => `<button class="option" data-merge-into="${esc(x.id)}"><span class="dot ${x.status}"></span>
         <span class="option-title">${esc(x.title)}</span><span class="hint">${x.votes}</span></button>`).join("")
-    : '<div class="hint">Ничего не найдено</div>';
+    : '<div class="hint">No results</div>';
 }
 
 function mergePicker(i) {
   return `<div class="merge-picker">
-    <input class="input" id="merge-q" placeholder="С какой идеей объединить?" value="${esc(mergeQuery)}" autocomplete="off">
+    <input class="input" id="merge-q" placeholder="Merge into which idea?" value="${esc(mergeQuery)}" autocomplete="off">
     <div class="merge-list" id="merge-list">${mergeOptions(i)}</div>
-    <div class="row"><span class="hint">Голоса перейдут к выбранной идее, эта скроется с доски и из приложения.</span>
-      <button class="btn small" id="merge-cancel">Отмена</button></div>
+    <div class="row"><span class="hint">Votes move to the idea you pick. This one leaves the board and the app.</span>
+      <button class="btn small" id="merge-cancel">Cancel</button></div>
   </div>`;
 }
 
@@ -714,10 +711,10 @@ async function saveText(form) {
   saving.add(i.id); editing = false; render();
   try {
     i.tag = await backend.save(i, { title, details });
-    toast("Текст идеи сохранён");
+    toast("Idea text saved");
   } catch (error) {
     Object.assign(i, before);
-    toast("Текст не сохранён. " + describe(error));
+    toast("Text not saved. " + describe(error));
   } finally {
     saving.delete(i.id); render();
   }
@@ -745,7 +742,7 @@ async function moderate(id, patch, { announce = "", undoable = true, after = nul
     flash(id);
     if (after) after();
     if (announce) {
-      const undo = undoable ? [{ label: "Отменить", run: () => moderate(id, before, { after }) }] : [];
+      const undo = undoable ? [{ label: "Undo", run: () => moderate(id, before, { after }) }] : [];
       toast(announce, ...undo, ...actions);
     }
     return true;
@@ -753,7 +750,7 @@ async function moderate(id, patch, { announce = "", undoable = true, after = nul
     Object.assign(i, before);
     saving.delete(id);
     render();
-    toast("Не сохранено. " + describe(error));
+    toast("Not saved. " + describe(error));
     return false;
   }
 }
@@ -763,7 +760,7 @@ function setStatus(id, status) {
   if (!i || i.status === status) return;
   // A finished idea without a version: offer to add it, the app shows «Вышло в версии».
   const askVersion = status === "done" && !i.releasedIn
-    ? [{ label: "Указать версию", run: () => { openPanel(id); const v = $("#released"); if (v) v.focus(); } }] : [];
+    ? [{ label: "Add Version", run: () => { openPanel(id); const v = $("#released"); if (v) v.focus(); } }] : [];
   moderate(id, { status }, { announce: `«${i.title}» → ${statusTitle(status)}`, actions: askVersion });
 }
 
@@ -774,7 +771,7 @@ function saveReply(form) {
   const released = form.querySelector("#released");
   const patch = { reply };
   if (released) patch.releasedIn = released.value.trim();
-  moderate(i.id, patch, { announce: "Сохранено: в приложении увидят после обновления списка", undoable: false });
+  moderate(i.id, patch, { announce: "Saved. The app shows it after the list refreshes", undoable: false });
 }
 
 function mergeInto(sourceId, targetId) {
@@ -784,7 +781,7 @@ function mergeInto(sourceId, targetId) {
   const reply = source.reply || `${MERGED_REPLY}${target.title}»: голоса перенесены туда.`;
   // Declined for apps on older versions of the package, which don't know merges: there it stays the author's only.
   moderate(sourceId, { status: "rejected", mergedInto: targetId, reply }, {
-    announce: `«${source.title}» объединена с «${target.title}»`,
+    announce: `“${source.title}” merged into “${target.title}”`,
     after: () => load(),
   }).then((saved) => { if (saved) openPanel(targetId); });
 }
@@ -793,7 +790,7 @@ function unmerge(id) {
   const i = ideaById(id);
   if (!i) return;
   const reply = i.reply.startsWith(MERGED_REPLY) ? "" : i.reply;
-  moderate(id, { status: "open", mergedInto: "", reply }, { announce: `«${i.title}» снова отдельная идея`, after: () => load() });
+  moderate(id, { status: "open", mergedInto: "", reply }, { announce: `“${i.title}” is its own idea again`, after: () => load() });
 }
 
 // Moves a queued idea before or after another in its column and saves the whole queue: «В работе», then «Запланировано».
@@ -814,12 +811,12 @@ async function saveQueue(next, id, undoable) {
   try {
     queue.tag = await backend.saveQueue(next, queue.tag);
     flash(id);
-    toast("Очередь сохранена: в приложении «Запланировано» идёт в этом порядке",
-      ...(undoable ? [{ label: "Отменить", run: () => saveQueue(before, id, false) }] : []));
+    toast("Queue saved. The app’s Planned tab uses this order",
+      ...(undoable ? [{ label: "Undo", run: () => saveQueue(before, id, false) }] : []));
   } catch (error) {
     queue = { ...queue, order: before };
     render();
-    toast("Очередь не сохранена. " + describe(error));
+    toast("Queue not saved. " + describe(error));
   }
 }
 
@@ -836,11 +833,11 @@ async function remove(id) {
     ideas = ideas.filter((x) => x.id !== id);
     openId = null; confirmDelete = false;
     render();
-    toast(`«${i.title}» удалена`);
+    toast(`“${i.title}” deleted`);
   } catch (error) {
     confirmDelete = false;
     renderPanel();
-    toast("Не удалось удалить. " + describe(error));
+    toast("Couldn’t delete. " + describe(error));
   }
 }
 

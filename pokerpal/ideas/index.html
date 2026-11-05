@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>Идеи</title>
+<title>Ideas</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111114'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white'%3E%E2%99%A0%3C/text%3E%3C/svg%3E">
 <style>
 /* Layout: a header (brand, account) and a toolbar (stats, sort, search) over a board of status columns that fills the
@@ -331,17 +331,17 @@ textarea.input { min-height: 140px; resize: vertical; line-height: 1.45; }
 <script src="app.js" defer></script>
 </head>
 <body>
-<span class="demo" id="demo-badge" hidden>Демо: тестовые идеи, CloudKit не подключён</span>
+<span class="demo" id="demo-badge" hidden>Demo: sample ideas, CloudKit isn’t connected</span>
 <header>
   <div class="brand">
     <span class="logo" aria-hidden="true">♠</span>
     <div class="title">
-      <h1 id="app-title">Идеи</h1>
+      <h1 id="app-title">Ideas</h1>
       <span class="updated" id="updated" aria-live="polite"></span>
     </div>
   </div>
   <div class="account">
-    <div class="seg small env" role="group" aria-label="Окружение CloudKit">
+    <div class="seg small env" role="group" aria-label="CloudKit environment">
       <button id="env-development" aria-pressed="true">Dev</button>
       <button id="env-production" aria-pressed="false">Prod</button>
     </div>
@@ -354,24 +354,24 @@ textarea.input { min-height: 140px; resize: vertical; line-height: 1.45; }
 <div class="toolbar">
   <div class="stats" id="stats"></div>
   <div class="controls">
-    <div class="seg" role="group" aria-label="Сортировка">
-      <button data-sort="votes" aria-pressed="true">По голосам</button>
-      <button data-sort="trend" aria-pressed="false">В тренде</button>
-      <button data-sort="new" aria-pressed="false">Новые</button>
+    <div class="seg" role="group" aria-label="Sort">
+      <button data-sort="votes" aria-pressed="true">Top</button>
+      <button data-sort="trend" aria-pressed="false">Trending</button>
+      <button data-sort="new" aria-pressed="false">Newest</button>
     </div>
     <label class="search">
       <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <input id="q" type="search" placeholder="Поиск" aria-label="Поиск идей" autocomplete="off">
+      <input id="q" type="search" placeholder="Search" aria-label="Search ideas" autocomplete="off">
       <kbd aria-hidden="true">/</kbd>
     </label>
-    <select class="filter" id="version" aria-label="Версия приложения" hidden></select>
-    <button class="btn icon-btn" id="reload" aria-label="Обновить" title="Обновить (R)">
+    <select class="filter" id="version" aria-label="App version" hidden></select>
+    <button class="btn icon-btn" id="reload" aria-label="Refresh" title="Refresh (R)">
       <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 2.5v3h-3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
   </div>
 </div>
-<nav class="switcher" id="switcher" aria-label="Колонки"></nav>
-<main class="board" id="board" aria-label="Доска идей"></main>
+<nav class="switcher" id="switcher" aria-label="Columns"></nav>
+<main class="board" id="board" aria-label="Ideas board"></main>
 <div id="panel-root" hidden></div>
 <div class="toast-root" id="toast-root" aria-live="polite"></div>
 </body>

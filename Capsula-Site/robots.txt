@@ -1,3 +1,4 @@
 User-Agent: *
-Disallow: /
+Allow: /
 
+Host: https://oddlyworking.app/Capsula-Site

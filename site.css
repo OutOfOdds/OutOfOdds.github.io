@@ -29,7 +29,7 @@
 .theme .sun { display:none; }
 :root[data-theme="dark"] .theme .sun { display:block; } :root[data-theme="dark"] .theme .moon { display:none; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme .sun { display:block; } :root:not([data-theme="light"]) .theme .moon { display:none; } }
-.checks svg rect[fill] { fill:var(--ink); }
+.checks svg rect[fill]:not([fill="none"]) { fill:var(--ink); }
 .checks svg path { stroke:var(--paper); }
 
 * { box-sizing:border-box; }

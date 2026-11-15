@@ -3,18 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Page not found · oddly working</title>
-<link rel="stylesheet" href="/home.css?v=2">
+<title>Page not found — oddlyworkingapp</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#EFEDE6">
+<link rel="stylesheet" href="/site.css?v=1">
 </head>
 <body>
-<div class="page">
-<header class="bar">
-  <a class="mark" href="/">oddly working</a>
-</header>
-<main class="lost">
-  <h1>Page not found.</h1>
-  <p>Nothing lives at this address. <a href="/">Go to the home page</a>.</p>
-</main>
+<div class="wrap">
+  <header class="bar">
+    <a class="wm" href="/" aria-label="oddlyworkingapp home"><span>oddly</span><span class="w">working</span><span class="a">app</span></a>
+    <span class="mono" style="color:var(--faint)">Error 404</span>
+  </header>
+  <main class="lost">
+    <ul class="checks" aria-label="Page check" style="flex-direction:column;gap:10px">
+      <li class="off"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><rect x="1.5" y="1.5" width="19" height="19" rx="5" fill="none" stroke="#8E8B84" stroke-width="2"/></svg><span>working</span></li>
+      <li class="off"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><rect x="1.5" y="1.5" width="19" height="19" rx="5" fill="none" stroke="#8E8B84" stroke-width="2"/></svg><span>oddly working</span></li>
+    </ul>
+    <h1>This page<br>isn’t working.<br><em>Not even oddly.</em></h1>
+    <div class="btns">
+      <a class="btn solid" href="/">← Back to the index</a>
+      <a class="btn" href="/status/">Check status</a>
+    </div>
+  </main>
 </div>
 </body>
 </html>

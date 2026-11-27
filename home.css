@@ -15,7 +15,7 @@
   /* Size of the sentence without the script, tuned for the current text: bar, sentence and footer stay on the
      first screen of a computer (checked from 1000x600 to 2560x1440). For a much longer sentence lower both numbers
      in min(), for a much shorter one raise them. home.js then fits any text exactly. */
-  --say: clamp(1.75rem, min(5.9vw, 14.6vh - 32px), 9rem);
+  --say: clamp(1.75rem, min(5.9vw, 14.6vh - 39px), 9rem);
   --say-phone: clamp(1.625rem, 7.9vw, 3rem);
 }
 * { box-sizing: border-box; }
@@ -70,11 +70,15 @@ a.app:focus-visible, .app[aria-expanded="true"], .w:has(:focus-visible) .app { b
 .w.x .app { background-size: 100% 0; color: inherit; }
 .w.x .app img { transform: none; }
 
-.foot { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 16px var(--m); align-items: end; padding-bottom: max(26px, env(safe-area-inset-bottom, 0px)); font-size: .9375rem; }
-.foot p { max-width: 50ch; }
-.foot p a { font-weight: 700; text-underline-offset: 4px; }
-.foot nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 26px; }
-.foot nav a { text-underline-offset: 4px; padding-block: 6px; }
+/* footer: the support address set like the sentence, then one small line */
+.foot { padding-bottom: max(22px, env(safe-area-inset-bottom, 0px)); font-size: .875rem; }
+.foot .lab { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; opacity: .65; }
+.foot .mail a { display: inline-block; margin-top: 2px; font-weight: 700; font-stretch: 75%; font-size: clamp(1.625rem, 3.4vw, 3.25rem); line-height: 1.1; letter-spacing: -.02em; text-decoration: none; overflow-wrap: anywhere; background: linear-gradient(var(--acc), var(--acc)) no-repeat 0 97% / 100% .08em; transition: color .2s, background-size .28s cubic-bezier(.2, .8, .2, 1); }
+.foot .mail a:hover { background-size: 100% 100%; color: var(--dark); }
+.fine { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 26px; margin-top: 18px; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, .16); color: rgba(255, 255, 255, .68); }
+.fine nav { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+.fine nav a { text-underline-offset: 4px; padding-block: 6px; }
+.fine nav a:hover { color: var(--ink); }
 
 /* phone: the page scrolls, a tapped name opens its card as a sheet at the bottom, a tap elsewhere closes it */
 @media (max-width: 820px) {
@@ -84,10 +88,12 @@ a.app:focus-visible, .app[aria-expanded="true"], .w:has(:focus-visible) .app { b
   .pop, .w.up .pop { position: fixed; z-index: 20; left: max(12px, env(safe-area-inset-left, 0px)); right: max(12px, env(safe-area-inset-right, 0px)); top: auto; bottom: max(12px, env(safe-area-inset-bottom, 0px)); width: auto; max-width: none; padding: 18px 20px 12px; border-radius: 18px; box-shadow: 0 0 0 1px rgba(11, 12, 16, .08), 0 18px 50px -12px rgba(0, 0, 0, .65); transform: translateY(6px); }
   .pop::before { content: none; }
   .pop .go a { padding-block: 10px; }
-  .foot { grid-template-columns: minmax(0, 1fr); padding-top: 8px; }
-  .foot nav { justify-content: flex-start; }
+  .foot { padding-top: 8px; }
+  .bar .wide { display: none; }
+  .fine { flex-direction: column; align-items: flex-start; }
+  .fine p span { display: block; margin-top: 2px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .app, .app img, .pop { transition: none; }
+  .app, .app img, .pop, .foot .mail a { transition: none; }
   .pop, .w.up .pop { transform: none; }
 }
